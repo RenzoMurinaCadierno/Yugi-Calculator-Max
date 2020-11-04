@@ -1,0 +1,26 @@
+/* mobile first */
+.ScreenDivisionTop {
+  border: var(--border-secondary-vw);
+  box-shadow: var(--border-shadow-secondary-vw);
+  border-radius: 0.4vw;
+}
+
+.ScreenDivisionBottom {
+  align-self: flex-start;
+  justify-content: flex-start;
+}
+/* end mobile first */
+
+/* all devices portrait */
+@media screen and (orientation: portrait) {
+  .ScreenDivisionTop {
+    border: var(--border-secondary-vh);
+    box-shadow: var(--border-shadow-secondary-vh);
+  }
+
+  .ScreenDivisionBottom {
+    width: 55%;
+    align-self: center;
+  }
+}
+/* end all devices portrait */

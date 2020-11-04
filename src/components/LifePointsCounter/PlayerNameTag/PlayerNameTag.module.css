@@ -1,0 +1,39 @@
+/* mobile first */
+.Span {
+  cursor: pointer;
+}
+
+.Span:hover {
+  text-shadow: var(--overlay-text-shadow-highlight);
+}
+
+.Form {
+  position: absolute;
+  width: 91%;
+}
+
+.Input {
+  color: var(--secondary-2);
+  text-shadow: var(--overlay-text-shadow);
+  font-size: 2.4vw;
+  font-weight: bold;
+  font-style: italic;
+  letter-spacing: 0.15vw;
+  outline: none;
+  background: rgba(6, 6, 6, 0.7);
+}
+
+.CharLimit {
+  pointer-events: none;
+  color: var(--primary-2);
+  opacity: 0.8;
+}
+/* end mobile first */
+
+/* all devices portrait */
+@media screen and (orientation: portrait) {
+  .Input {
+    font-size: 2.5vh;
+  }
+}
+/* end all devices portrait */

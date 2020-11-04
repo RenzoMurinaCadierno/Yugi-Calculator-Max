@@ -1,0 +1,86 @@
+/* mobile first */
+.Container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ConfirmMsg,
+.Message {
+  color: var(--secondary-2);
+  height: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 0.3vw;
+  font-size: 4vw;
+}
+
+.ConfirmMsg {
+  height: 100%;
+  flex-flow: column nowrap;
+  font-size: 2.2vw;
+}
+
+.Buttons {
+  height: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Buttons > button {
+  height: 60%;
+  margin: 0 1.5vw 2vh 1.5vw;
+  font-size: 2.8vw;
+}
+
+.TickImage {
+  height: 4vw;
+  margin-left: 5%;
+  margin-bottom: 0.2vw;
+  filter: drop-shadow(0 0 2px var(--primary-2));
+}
+
+.CancelImage {
+  height: 4vw;
+  margin-left: 5%;
+  margin-bottom: 0.1vw;
+  filter: brightness(1.5) drop-shadow(0 0 2px var(--secondary-0));
+}
+/* end mobile first */
+
+/* all devices portrait */
+@media screen and (orientation: portrait) {
+  .Message {
+    height: 40%;
+    font-size: 4vh;
+    padding: 0 2vw;
+  }
+
+  .ConfirmMsg {
+    height: 100%;
+    font-size: 2.5vh;
+  }
+
+  .Buttons {
+    height: 60%;
+    flex-direction: column;
+  }
+
+  .Buttons > button {
+    font-size: 3.5vh;
+    height: 30%;
+    margin: 2vh 0 3vh 0;
+  }
+
+  .TickImage {
+    height: 5vh;
+    margin-bottom: 0.3vh;
+  }
+
+  .CancelImage {
+    height: 5vh;
+  }
+}
+/* end all devices portrait */

@@ -1,0 +1,32 @@
+/* mobile first */
+.Container {
+  height: 35%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.Container > button {
+  font-size: 2.3vw;
+  font-weight: bold;
+}
+/* end mobile first */
+
+/* all screens portrait */
+@media screen and (orientation: portrait) {
+  .Container {
+    height: 45%;
+    flex-direction: column;
+    padding-top: 0.5vh;
+  }
+
+  .Container > button {
+    margin: 1vh;
+    font-size: 4.5vw;
+  }
+
+  .Container > button:last-child {
+    order: -1;
+  }
+}
+/* end all screens portrait */

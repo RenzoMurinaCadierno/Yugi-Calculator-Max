@@ -1,0 +1,75 @@
+/* mobile first */
+.Container {
+  border: var(--border-secondary);
+  box-shadow: var(--border-shadow-secondary);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.ArrowImage {
+  filter: opacity(80%) hue-rotate(310deg);
+  pointer-events: none;
+}
+
+.ExtraText {
+  position: absolute;
+  top: 45%;
+  pointer-events: none;
+}
+
+.ContainerDisabled {
+  border: var(--border-disabled);
+  box-shadow: var(--border-shadow-disabled);
+  cursor: not-allowed;
+}
+
+.ArrowImageDisabled {
+  filter: grayscale(100%) opacity(65%) !important;
+  cursor: not-allowed !important;
+}
+
+.Clickable {
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.Active {
+  transform: scale(1.2);
+  filter: opacity(100%) brightness(150%);
+}
+
+.Left {
+  transform: rotate(0deg);
+}
+
+.Top-Left {
+  transform: rotate(45deg);
+}
+
+.Top {
+  transform: rotate(90deg);
+}
+
+.Top-Right {
+  transform: rotate(135deg);
+}
+
+.Right {
+  transform: rotate(180deg);
+}
+
+.Bottom-Right {
+  transform: rotate(225deg);
+}
+
+.Bottom {
+  transform: rotate(270deg);
+}
+
+.Bottom-Left {
+  transform: rotate(315deg);
+}
+/* end mobile first */

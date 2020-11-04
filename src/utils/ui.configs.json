@@ -1,0 +1,205 @@
+{
+  "initialLP": {
+    "p1": 8000,
+    "p2": 8000
+  },
+  "tempLP": {
+    "init": "0"
+  },
+  "lpLimits": {
+    "min": 0,
+    "max": 99999
+  },
+  "initialPlayerNames": { "p1": "Player A", "p2": "Player B" },
+  "initialTimer": {
+    "hs": "00",
+    "mins": "20",
+    "secs": "00"
+  },
+  "diceConfig": {
+    "minRoll": 1,
+    "maxRoll": 6
+  },
+  "maxLogLength": 30,
+  "documentTitle": "Yugi Calculator MAX",
+  "pageNames": ["calc", "log", "search", "decks", "config"],
+  "mediaQueries": {
+    "xs": "(max-width: 500px)",
+    "portrait": "screen and (orientation: portrait)"
+  },
+  "swipeDelta": 100,
+  "localStorageConfigsKeyName": "RNMC-YCM-configs",
+  "localStorageLogsKeyName": "RNMC-YCM-logs",
+  "localStorageDecksKeyName": "RNMC-YCM-decks",
+  "localStorageResetKeyName": "RNMC-YCM-resetFlag",
+  "localStorageConfigsObjectKeys": {
+    "currentLP": "currentLP",
+    "playerConfigs": "playerConfigs",
+    "fetchedCardsLastDate": "fetchedCardsLastDate"
+  },
+  "localStorageLogsObjectKeys": {
+    "logHistory": "logHistory"
+  },
+  "localStorageDecksObjectKeys": {
+    "decks": "decks"
+  },
+  "initialConfigsLocalStorage": [
+    { "currentLP": "initialLP" },
+    { "playerConfigs": "playerOptions" },
+    { "fetchedCardsLastDate": "fetchedCardsLastDateArray" }
+  ],
+  "initialLogsLocalStorage": [{ "logHistory": "logArray" }],
+  "initialDecksLocalStorage": [{ "decks": "decksObject" }],
+  "fetchedCardsLastDateArray": [],
+  "logArray": [],
+  "logTypes": {
+    "dice": "dice",
+    "coin": "coin",
+    "lp": "lp",
+    "timer": "timer"
+  },
+  "playerOptions": {},
+  "decksObject": {},
+  "calcConfigs": {
+    "progressBar": {
+      "showPercentage": true,
+      "showProgress": true,
+      "showTimer": true
+    },
+    "playerNames": {
+      "maxLength": 12
+    }
+  },
+  "deckBuilderConfigs": {
+    "cardLimits": {
+      "main": 60,
+      "side": 15,
+      "extra": 15
+    },
+    "mainDeckCards": [
+      "Normal Monster",
+      "Normal Tuner Monster",
+      "Effect Monster",
+      "Tuner Monster",
+      "Flip Effect Monster",
+      "Flip Tuner Effect Monster",
+      "Gemini Monster",
+      "Spirit Monster",
+      "Toon Monster",
+      "Union Effect Monster",
+      "Pendulum Effect Monster",
+      "Pendulum Flip Effect Monster",
+      "Pendulum Normal Monster",
+      "Pendulum Tuner Monster",
+      "Pendulum Tuner Effect Monster",
+      "Ritual Effect Monster",
+      "Ritual Monster",
+      "Spell Card",
+      "Trap Card",
+      "Skill Card"
+    ],
+    "extraDeckCards": [
+      "Fusion Monster",
+      "Synchro Monster",
+      "Synchro Tuner Monster",
+      "Synchro Pendulum Effect Monster",
+      "XYZ Monster",
+      "Pendulum Effect Fusion Monster",
+      "XYZ Pendulum Effect Monster",
+      "Link Monster"
+    ],
+    "maxDeckNameCharLength": 24,
+    "maxDecksAmount": 10,
+    "validCardObjectProps": [
+      "id",
+      "name",
+      "desc",
+      "type",
+      "card_images",
+      "card_prices"
+    ]
+  },
+  "apiConfigs": {
+    "globalCardListURL": "https://db.ygoprodeck.com/api/v7/cardinfo.php",
+    "cardSearchURL": {
+      "fuzzy": "https://db.ygoprodeck.com/api/v7/cardinfo.php?fname=",
+      "name": "https://db.ygoprodeck.com/api/v7/cardinfo.php?name="
+    },
+    "cardImgFetchUrl": "https://storage.googleapis.com/ygoprodeck.com/pics/",
+    "retailerURLs": {
+      "amazon": "https://www.amazon.com/s?k=",
+      "cardmarket": "https://www.cardmarket.com/en/YuGiOh/Products/Search?searchString=",
+      "coolstuffinc": "https://www.coolstuffinc.com/main_search.php?pa=searchOnName&page=1&resultsPerPage=25&q=",
+      "ebay": "https://www.ebay.com/sch/i.html?_nkw=",
+      "tcgplayer": "https://www.tcgplayer.com/search/all/product?q="
+    },
+    "limit": 518,
+    "callTimeout": 10000,
+    "filterTimeout": 250,
+    "cardRefetchBlockTimeout": 300000
+  },
+  "optionsConfigs": {
+    "lifePointsCharLimit": 5
+  },
+  "timeouts": {
+    "animatedNumber": 750,
+    "coinTossAnimation": 280,
+    "diceRollAnimation": 330,
+    "doubleTapDelay": 300,
+    "freezeSwipe": 350,
+    "secondScreenUnmountingDelay": 200,
+    "toast": {
+      "inactiveCardImage": 4000,
+      "inactiveRetailerSite": 4000,
+      "inactiveCalcSwitches": 2000,
+      "inactiveCreditsOptions": 3000,
+      "inactiveConfigsSwitches": 2000,
+      "inactiveSaveDeck": 3000,
+      "inactiveDeleteDeck": 4000,
+      "inactiveCardRefetch": 5000,
+      "inactiveAppReset": 3000
+    }
+  },
+  "notMonsterCardsArray": ["Spell Card", "Trap Card", "Skill Card"],
+  "invalidNameSearchCharacters": ["&"],
+  "socialMediaSites": {
+    "github": "https://github.com/RenzoMurinaCadierno",
+    "linkedin": "https://www.linkedin.com/in/renzomurinacadierno/",
+    "mail": null
+  },
+  "togglers": {
+    "secondaryScreens": {
+      "die": "die",
+      "coin": "coin",
+      "token": "token",
+      "timer": "timer",
+      "restartDuel": "restartDuel",
+      "confirmRestartDuel": "confirmRestartDuel",
+      "calculator": "calculitas",
+      "deleteLogs": "deleteLogs",
+      "noInternetConnection": "noInternetConnection",
+      "cardSearchError": "cardSearchError",
+      "searchTips": "searchTips",
+      "altCardArt": "altCardArt",
+      "noConnection": "noConnection",
+      "errorBoundary": "errorBoundary",
+      "selectOrEditDeck": "selectOrEditDeck",
+      "deckCreatorHelp": "deckCreatorHelp",
+      "reloadCardList": "reloadCardList",
+      "resetApp": "resetApp"
+    },
+    "toast": {
+      "creditSites": "creditSites",
+      "logSwitches": "logSwitches",
+      "sfxSwitch": "sfxSwitch",
+      "cardImgScreen": "cardImgScreen",
+      "retailerSite": "retailerSite",
+      "deleteDeck": "deleteDeck",
+      "saveDeck": "saveDeck",
+      "addDeck": "addDeck",
+      "cardInfo": "cardInfo",
+      "cardInfoWarning": "cardInfoWarning",
+      "appReset": "appReset"
+    }
+  }
+}

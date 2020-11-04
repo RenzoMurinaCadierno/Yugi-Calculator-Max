@@ -1,0 +1,44 @@
+/* mobile first */
+.PlayerTag {
+  width: 15vw;
+  font-size: 2.3vw;
+  font-weight: bold;
+  letter-spacing: 0.15vw;
+  margin-left: 2vw;
+}
+
+.LifePointsContainer {
+  width: 13vw;
+}
+
+.LifePointsInput {
+  padding: 1vh 0;
+  font-size: 2.5vw;
+  font-weight: bold;
+  letter-spacing: 0.15vw;
+  margin-right: 2vw;
+  outline: none;
+}
+/* end mobile first */
+
+/* all screens portrait */
+@media screen and (orientation: portrait) {
+  .PlayerTag {
+    font-size: 2.2vh;
+    font-style: italic;
+    letter-spacing: 0.2vw;
+    width: 15vw;
+    margin-left: 3vw;
+    margin-right: 2vw;
+  }
+
+  .LifePointsContainer {
+    width: 20vw;
+  }
+
+  .LifePointsInput {
+    font-size: 2.7vh;
+    margin-right: 3vw;
+  }
+}
+/* end all screens portrait */

@@ -1,0 +1,116 @@
+/* mobile first */
+.ToastChildren {
+  flex-direction: column;
+}
+
+.ToastText {
+  font-size: 2vw;
+  font-weight: bold;
+  font-style: italic;
+  color: var(--secondary-1);
+  letter-spacing: 0.2vw;
+}
+
+.ToastClickable {
+  font-size: 2.1vw;
+  color: var(--secondary-2);
+  text-shadow: var(--text-shadow-secondary);
+  text-decoration: underline;
+  font-weight: bold;
+  font-style: italic;
+  cursor: pointer;
+}
+
+.GridDisplay {
+  width: 100%;
+  display: grid;
+  grid-template-areas:
+    "deckTitle saveTitle"
+    "deckSelect saveMiniCircle"
+    "deckSelect deleteTitle"
+    "deckSelect deleteMiniCircle"
+    "deckSelect addTitle"
+    "deckSelect addMiniCircle";
+  grid-template-columns: 68% 28%;
+  grid-template-rows: repeat(3, 11% 20%);
+  gap: 1%;
+  margin: 1% 0;
+  justify-content: center;
+}
+
+.DeckTitle {
+  grid-area: deckTitle;
+}
+
+.DeckSelect {
+  grid-area: deckSelect;
+}
+
+.SaveTitle {
+  grid-area: saveTitle;
+}
+
+.DeleteTitle {
+  grid-area: deleteTitle;
+}
+
+.AddTitle {
+  grid-area: addTitle;
+}
+
+.SaveMiniCircle {
+  grid-area: saveMiniCircle;
+}
+
+.DeleteMiniCircle {
+  grid-area: deleteMiniCircle;
+}
+
+.AddMiniCircle {
+  grid-area: addMiniCircle;
+}
+
+.SaveDisabledText {
+  grid-area: saveMiniCircle;
+}
+
+.DeleteDisabledText {
+  grid-area: deleteMiniCircle;
+}
+
+.AddDisabledText {
+  grid-area: addMiniCircle;
+}
+/* end mobile first */
+
+/* all screens portrait */
+@media screen and (orientation: portrait) {
+  .ToastText {
+    flex-direction: row;
+    font-size: 1.9vh;
+    letter-spacing: 0.2vw;
+    margin-bottom: 0.5vh;
+  }
+
+  .ToastClickable {
+    margin: 0 2vw;
+    font-size: 2vh;
+  }
+
+  .GridDisplay {
+    grid-template-areas:
+      "deckTitle"
+      "deckSelect"
+      "saveTitle"
+      "saveMiniCircle"
+      "deleteTitle"
+      "deleteMiniCircle"
+      "addTitle"
+      "addMiniCircle";
+    grid-template-columns: 98%;
+    grid-template-rows: 6% 42% repeat(3, 6% 11%);
+    gap: 0;
+    margin-bottom: 3%;
+  }
+}
+/* end all screens portrait */

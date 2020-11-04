@@ -1,0 +1,93 @@
+:root {
+  /* color theme */
+  --primary-0: #4424b8; /* 68, 36, 184 */
+  --primary-1: #6338ff;
+  --primary-2: #6f31fd; /* 111, 49, 253 */
+  --primary-3: #8857fa;
+  --secondary-0: #1a5f97; /* 26, 95, 151 */
+  --secondary-1: #2f7ed8;
+  --secondary-2: #3ba5fc; /* 59, 165, 252 */
+  --disabled-0: #695d86;
+  --disabled-1: #716a80;
+  --disabled-2: #85838a;
+  --danger-0: #741808;
+  --danger-1: #ad230b;
+  --danger-2: #ff310d;
+  --highlight-0: #86f1f1;
+  --highlight-1: #0c4242;
+  --background-0: #060606;
+  /* end color theme */
+
+  /* border and their box-shadows variables */
+  --border-primary: 1px solid var(--primary-1);
+  --border-shadow-primary: 0 0 7px inset var(--primary-2),
+    0 0 7px var(--primary-0);
+  --border-secondary: 1px solid var(--secondary-1);
+  --border-shadow-secondary: 0 0 7px inset var(--secondary-1),
+    0 0 7px var(--secondary-0);
+  --border-disabled: 1px solid var(--disabled-1);
+  --border-shadow-disabled: 0 0 7px inset var(--disabled-2),
+    0 0 7px var(--disabled-0);
+  --border-danger: 1px solid var(--danger-1);
+  --border-shadow-danger: 0 0 7px inset var(--danger-2), 0 0 7px var(--danger-0);
+  --border-highlight: 1px solid var(--highlight-0);
+  --border-shadow-highlight: 0 0 7px inset var(--highlight-0),
+    0 0 7px var(--highlight-1);
+  --border-shadow-background: 0 -2px 3px rgba(0, 0, 0, 0.07),
+    0 -4px 5px rgba(0, 0, 0, 0.5), 0 -3px 7px rgba(0, 0, 0, 0.3),
+    0 2px 3px rgba(0, 0, 0, 0.07), 0 3px 5px rgba(0, 0, 0, 0.5),
+    0 4px 7px rgba(0, 0, 0, 0.3);
+  --border-primary-vw: 0.3vw solid var(--primary-0);
+  --border-secondary-vw: 0.3vw solid var(--secondary-0);
+  --border-secondary-vh: 0.3vh solid var(--secondary-0);
+  --border-shadow-secondary-vw: 0 0 0.7vw inset var(--highlight-1),
+    0 0 0.7vw var(--highlight-1);
+  --border-shadow-secondary-vh: 0 0 0.7vh inset var(--highlight-1),
+    0 0 0.7vh var(--highlight-1);
+  --border-highlight-vw: 0.3vw solid var(--highlight-0);
+  --border-shadow-highlight-vw: 0 0 0.7vw inset var(--highlight-1),
+    0 0 0.7vw var(--highlight-1);
+  --border-primary-1: 0.1vw solid var(--primary-1);
+  --border-shadow-primary-1: 0 0 1vw inset var(--primary-0),
+    0 0 1vw var(--primary-0);
+  --border-secondary-1: 0.1vw solid rgba(26, 95, 151, 0.9);
+  --border-shadow-secondary-1: 0 0 1vw inset rgba(26, 95, 151, 0.7),
+    0 0 1vw rgba(26, 95, 151, 0.7);
+  /* end border and their box-shadows variables */
+
+  /* background color to display when hovering over containers */
+  --background-hover-primary: rgba(63, 122, 248, 0.1);
+  --background-hover-secondary: rgba(124, 57, 250, 0.1);
+  --background-hover-secondary-thick: rgba(124, 57, 250, 0.2);
+  --background-hover-disabled: rgba(206, 182, 250, 0.1);
+  /* end background color to display when hovering over containers */
+
+  /* text shadows of its same color type */
+  --text-shadow-primary: 0 0 5px var(--primary-1), 0 0 5px var(--primary-0);
+  --text-shadow-secondary: 0 0 7px var(--secondary-1),
+    0 0 7px var(--secondary-0);
+  --text-shadow-disabled: 0 0 1vw var(--disabled-0);
+  --text-shadow-highlight: 0 0 0.2vw var(--highlight-0);
+  /* end text shadows of its same color type */
+
+  /* text shadow to apply when placing text over the border of a container */
+  --overlay-text-shadow: 0 0 0.3vw #060606, 0 0 0.6vw #060606, 0 0 0.9vw #060606,
+    0 0 1.2vw #060606, 0 0 1.5vw #060606;
+  --overlay-text-shadow-highlight: 0 0 0.3vw #060606, 0 0 0.6vw #060606,
+    0 0 0.9vw #060606, 0 0 1.2vw #060606, 0 0 1.5vw #060606,
+    0 0 0.2vw var(--highlight-0), 0 0 0.4vw var(--highlight-0),
+    0 0 0.6vw var(--highlight-0), 0 0 0.8vw var(--highlight-0),
+    0 0 1vw var(--highlight-0);
+  --overlay-text-shadow-opaque: var(--overlay-text-shadow),
+    var(--overlay-text-shadow-highlight);
+  /* end text shadow to apply when placing text over the border of a container */
+
+  /* scrollbar styles */
+  --scrollbar-track-bgcolor: rgba(68, 36, 184, 0.4);
+  /* end scrollbar styles */
+
+  /* global background */
+  --svg-background: url("../assets/uiIcons/background.svg");
+  /* background by SVGBackgrounds.com */
+  /* end global background */
+}

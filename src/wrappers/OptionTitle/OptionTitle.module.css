@@ -1,0 +1,27 @@
+/* mobile first */
+.Container {
+  width: 21vw;
+  margin: 1vh 0;
+  padding: 0 0.5vw 0 0;
+  font-size: 2.3vw;
+  letter-spacing: 0.1vw;
+  font-weight: bold;
+  font-style: italic;
+  border-right: 0.3vw solid var(--secondary-1);
+}
+/* end mobile first */
+
+/* all devices portrait */
+@media screen and (orientation: portrait) {
+  .Container {
+    font-size: 2.3vh;
+    letter-spacing: 0.3vw;
+    width: 80vw;
+    height: 3vh;
+    margin: 0.5vh 0 0 0;
+    padding-bottom: 1vh;
+    border-right: unset;
+    border-bottom: 0.4vw solid var(--secondary-1);
+  }
+}
+/* end all devices portrait */

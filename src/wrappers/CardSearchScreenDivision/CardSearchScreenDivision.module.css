@@ -1,0 +1,12 @@
+/* mobile first */
+.Container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+  position: relative;
+  overflow: hidden;
+  transition: all 500ms;
+}
+/* end mobile first */

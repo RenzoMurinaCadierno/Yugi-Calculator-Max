@@ -1,0 +1,9 @@
+/* mobile first */
+.Container {
+  color: var(--secondary-0);
+  text-shadow: 0 0 1px var(--secondary-1);
+  font-weight: bold;
+  font-size: 1.3rem;
+  letter-spacing: 0.1rem;
+}
+/* end mobile first */

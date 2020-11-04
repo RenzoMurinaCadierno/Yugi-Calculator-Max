@@ -1,0 +1,20 @@
+/* mobile first */
+.Default {
+  width: 10vw;
+}
+
+.Primary {
+  filter: drop-shadow(0 0 5px var(--primary-0))
+    drop-shadow(0 0 7px var(--primary-1)) opacity(40%);
+}
+
+.Secondary {
+  filter: drop-shadow(0 0 5px var(--secondary-0))
+    drop-shadow(0 0 7px var(--secondary-1))
+    drop-shadow(0 0 10px var(--highlight-1)) opacity(40%);
+}
+
+.Disabled {
+  filter: opacity(60%);
+}
+/* end mobile first */

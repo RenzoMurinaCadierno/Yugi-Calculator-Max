@@ -1,0 +1,59 @@
+/* mobile first */
+.Container {
+  height: 65%;
+  width: 60%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 2fr 1fr 2fr 1fr 2fr;
+  align-items: center;
+  justify-content: space-evenly;
+  transition: all 500ms;
+}
+
+.Container div {
+  width: 100%;
+  color: var(--secondary-2);
+  font-size: 5vw;
+  margin: auto;
+  margin-left: 0.4vw;
+  padding-bottom: 3.5vh;
+}
+/* end mobile first */
+
+/* all screens portrait */
+@media screen and (orientation: portrait) {
+  .Container {
+    height: 50%;
+    grid-template-columns: 1fr;
+    margin-bottom: 5%;
+    margin-top: 1%;
+  }
+
+  .Container div {
+    height: auto;
+    padding-bottom: 1vh;
+    font-size: 3vh;
+    font-weight: bold;
+  }
+}
+/* end sll screens portrait */
+
+/* lg devices tweaks */
+@media (min-width: 960px) {
+  .Container {
+    width: 80%;
+  }
+
+  .Container div {
+    font-size: 5vw;
+  }
+}
+/* end lg devices tweaks */
+
+/* Surface Duo and devices alike portrait tweaks*/
+@media (max-width: 725px) and (min-height: 590px) and (max-height: 600px) {
+  .Container {
+    width: 80%;
+  }
+}
+/* end Surface Duo and devices alike portrait tweaks*/

@@ -1,0 +1,155 @@
+/* mobile first */
+.Container {
+  width: 95%;
+  height: 75%;
+  margin: 2% 0 0 0;
+  border-radius: 0.7vw;
+  border-bottom: 1px solid var(--primary-2);
+  font-size: 2.5vw;
+  color: var(--secondary-2);
+  overflow-x: hidden;
+  box-sizing: border-box;
+  box-shadow: var(--border-shadow-primary);
+  position: relative;
+}
+
+.LogBackground {
+  width: 0;
+  height: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  left: 2%;
+  right: 0;
+  bottom: 23%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: rotate(-20deg);
+  font-weight: bold;
+  font-size: 7.5vw;
+  letter-spacing: 7.5vw;
+  text-transform: uppercase;
+  color: rgba(68, 36, 184, 0.1);
+  text-shadow: 0 0 0.7vw rgba(111, 49, 253, 0.2),
+    0 0 1vw rgba(111, 49, 253, 0.2);
+  filter: grayscale(0.3) opacity(82%);
+  z-index: -1;
+}
+
+.Header {
+  font-weight: bold;
+  letter-spacing: 0.13vw;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0.9vh 0.75vw;
+  border: var(--border-secondary);
+  box-shadow: var(--border-shadow-secondary);
+  border-top-left-radius: 0.7vw;
+  border-top-right-radius: 0.7vw;
+  position: sticky;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 2;
+}
+
+.Header > li {
+  display: inline-block;
+  padding: 0;
+  text-align: center;
+}
+
+.Header > li:nth-child(1) {
+  width: 8.5%;
+}
+
+.Header > li:nth-child(2) {
+  width: 55%;
+}
+
+.Header > li:nth-child(3) {
+  width: 9.5%;
+}
+
+.Header > li:nth-child(4) {
+  width: 27%;
+  cursor: pointer;
+}
+
+.Header > li:nth-child(4):hover,
+.Header > li:nth-child(4):active {
+  text-shadow: var(--text-shadow-secondary);
+}
+
+.Content {
+  width: auto;
+  margin: 0;
+  padding: 0 0.75vw 0 0.75vw;
+  overflow-y: auto;
+  z-index: 1;
+}
+
+.Content > li {
+  transition: all 500ms;
+}
+/* end mobile first */
+
+/* all devices portrait */
+@media screen and (orientation: portrait) {
+  .LogBackground {
+    font-size: 7.5vh;
+    letter-spacing: 7.5vh;
+    left: 12%;
+  }
+
+  .Header {
+    height: 3vh;
+    font-size: 3.7vw;
+    padding: 1vh 1.25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .Header > li:nth-child(1) {
+    width: 12%;
+  }
+
+  .Header > li:nth-child(2) {
+    width: 43%;
+  }
+
+  .Header > li:nth-child(3) {
+    width: 18%;
+  }
+
+  .Header > li:nth-child(4) {
+    width: 27%;
+  }
+
+  .Content {
+    width: auto;
+    min-width: 97.5%;
+    padding: 0 1.25%;
+  }
+}
+/* end all devices portrait */
+
+/* CSS Transition animation states */
+:global(.animate-log-item-enter) {
+  transform: translateX(+100vw);
+}
+
+:global(.animate-log-item-enter-active) {
+  transform: translateX(0);
+}
+
+:global(.animate-log-item-exit) {
+  transform: translateX(0);
+}
+
+:global(.animate-log-item-exit-active) {
+  transform: translateX(+100vw);
+}
+/* end CSS Transition animation states */

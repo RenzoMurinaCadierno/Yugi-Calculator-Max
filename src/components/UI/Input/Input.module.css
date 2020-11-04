@@ -1,0 +1,43 @@
+/* mobile first */
+.Container {
+  color: var(--secondary-2);
+  text-align: center;
+  width: 100%;
+  border: var(--border-primary);
+  box-shadow: var(--border-shadow-primary);
+  border-radius: 0.3rem;
+  background: none;
+  font-size: 2.3vw;
+  letter-spacing: 0.1vw;
+}
+
+.Container:active:not(.Disabled),
+.Container:focus:not(.Disabled) {
+  border: var(--border-secondary);
+  box-shadow: var(--border-shadow-secondary);
+}
+
+.Container:-webkit-autofill,
+.Container:-webkit-autofill:hover,
+.Container:-webkit-autofill:focus,
+.Container:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px rgb(6, 6, 6) inset !important;
+  -webkit-text-fill-color: var(--secondary-1) !important;
+  -webkit-text-size-adjust: inherit;
+}
+
+.Disabled {
+  color: var(--secondary-2);
+  border: var(--border-disabled);
+  box-shadow: var(--border-shadow-disabled);
+  cursor: not-allowed;
+}
+/* end mobile first */
+
+/* all lg screens portrait tweaks */
+@media screen and (orientation: portrait) {
+  .Container {
+    font-size: 5vw;
+  }
+}
+/* end all lg screens portrait tweaks */

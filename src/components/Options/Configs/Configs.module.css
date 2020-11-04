@@ -1,0 +1,45 @@
+/* mobile first */
+.Container {
+  width: 90%;
+  height: 70%;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.Options {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  overflow-y: auto;
+  overflow-x: hidden;
+  margin-top: 1vh;
+  padding-bottom: 1vh;
+  border-bottom: 0.3vw solid var(--primary-1);
+}
+
+.Card {
+  width: 95%;
+  height: 10vh;
+  margin: 2.5vh 1vw 1.5vh 1vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* end mobile first */
+
+/* all devices portrait */
+@media screen and (orientation: portrait) {
+  .Options {
+    width: 100%;
+    border-bottom: 0.3vh solid var(--primary-1);
+  }
+
+  .Card {
+    height: 14vh;
+    margin: 1.5vh 1vw;
+    align-items: flex-start;
+  }
+}
+/* end all devices portrait */

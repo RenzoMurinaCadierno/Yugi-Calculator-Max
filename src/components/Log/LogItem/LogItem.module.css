@@ -1,0 +1,103 @@
+/* mobile first */
+.Container {
+  display: inline-block;
+  width: 100%;
+  padding: 0.9vh 0;
+  border-bottom: 0.15vw solid var(--primary-0);
+  font-size: 2.4vw;
+  pointer-events: none;
+}
+
+.Container > div {
+  display: inline-block;
+}
+
+.Container > div:nth-child(1) {
+  width: 8.5%;
+  text-transform: uppercase;
+  font-style: italic;
+  color: var(--secondary-1);
+  font-weight: bold;
+}
+
+.Container > div:nth-child(2) {
+  width: 55%;
+  text-align: left;
+  filter: brightness(130%);
+}
+
+.Container > div:nth-child(3) {
+  width: 9.5%;
+  font-style: italic;
+  color: var(--secondary-2);
+  filter: brightness(130%);
+}
+
+.Container > div:nth-child(4) {
+  width: 27%;
+}
+
+.Container > div > span {
+  padding-left: 10px;
+}
+/* end mobile first */
+
+/* all devices portrait */
+@media screen and (orientation: portrait) {
+  .Container {
+    width: 100%;
+    height: 16vw;
+    font-size: 4.4vw;
+    padding: 0.5vh 0;
+    border-bottom: 0.3vw solid var(--primary-0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .Container > div {
+    padding: 0 0.2vw;
+  }
+
+  .Container > div:nth-child(1) {
+    width: 12%;
+  }
+
+  .Container > div:nth-child(2) {
+    width: 43%;
+    text-align: unset;
+  }
+
+  .Container > div:nth-child(3) {
+    width: 18%;
+  }
+
+  .Container > div:nth-child(4) {
+    width: 27%;
+  }
+
+  .Container > div > span {
+    display: block;
+    text-align: center;
+    padding: 0;
+  }
+}
+/* end all devices portrait */
+
+/* CSS Transition animation states */
+:global(.animate-log-item2-enter) {
+  transform: translateX(-100vw);
+}
+
+:global(.animate-log-item2-enter-active) {
+  transform: translateX(0);
+}
+
+:global(.animate-log-item2-exit) {
+  transform: translateX(0);
+}
+
+:global(.animate-log-item2-exit-active) {
+  transform: translateX(+100vw);
+}
+/* end CSS Transition animation states */

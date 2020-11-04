@@ -1,0 +1,15 @@
+/* mobile first */
+.Container {
+  width: 100%;
+  height: 80%;
+}
+/* end mobile first */
+
+/* all devices portrait */
+@media screen and (orientation: portrait) {
+  .Container {
+    width: 98%;
+    height: 75%;
+  }
+}
+/* end all devices portrait */

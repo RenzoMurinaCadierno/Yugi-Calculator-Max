@@ -1,0 +1,40 @@
+@import "./styles/globalVars.css";
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-align: center;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: var(--svg-background), #060606;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+::-webkit-scrollbar {
+  width: 1vw;
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--scrollbar-track-bgcolor);
+  box-shadow: inset 0 0 0.5vw var(--secondary-3);
+  border-radius: 0.5vw;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--secondary-0);
+  border-radius: 0.5vw;
+}
+
+@media screen and (orientation: portrait) {
+  ::-webkit-scrollbar {
+    width: 1vh;
+  }
+}

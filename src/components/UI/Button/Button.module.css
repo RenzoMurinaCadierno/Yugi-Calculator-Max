@@ -1,0 +1,156 @@
+.Button {
+  width: 18%;
+  height: 22%;
+  margin: 0.15rem;
+  font-size: 2vw;
+  background: none;
+  border-radius: 0.8vw;
+  cursor: pointer;
+  outline: none;
+  transition: all 125ms ease;
+}
+
+.Primary {
+  color: var(--secondary-2);
+  border: var(--border-secondary);
+  box-shadow: var(--border-shadow-secondary);
+}
+
+.Secondary {
+  color: var(--secondary-2);
+  border: var(--border-primary);
+  box-shadow: var(--border-shadow-primary);
+}
+
+.Disabled {
+  color: var(--disabled-2) !important;
+  border: var(--border-disabled);
+  box-shadow: var(--border-shadow-disabled);
+  cursor: not-allowed;
+}
+
+.Primary:hover,
+.Primary:active {
+  background-color: var(--background-hover-primary);
+}
+
+.Secondary:hover,
+.Secondary:active {
+  background-color: var(--background-hover-secondary);
+}
+
+.PrimaryText {
+  color: var(--primary-2);
+}
+
+.Highlight {
+  box-shadow: var(--border-shadow-highlight);
+  color: var(--secondary-2) !important;
+  transform: scale(1.2);
+}
+
+.GrowSmall {
+  transform: scale(1.05);
+}
+
+.inlineBlock {
+  display: inline-block;
+}
+
+.fullWidth {
+  width: 100%;
+}
+
+.width92 {
+  width: 92%;
+}
+
+.width90 {
+  width: 90%;
+}
+
+.width85 {
+  width: 85%;
+}
+
+.width65 {
+  width: 65%;
+}
+
+.width50 {
+  width: 50%;
+}
+
+.width30 {
+  width: 30%;
+}
+
+.width25 {
+  width: 25%;
+}
+
+.width0 {
+  width: 0;
+}
+
+.oneInRow {
+  width: 80%;
+}
+
+.twoInRow {
+  width: 40%;
+}
+
+.threeInRow {
+  width: 30%;
+}
+
+.fourInRow {
+  width: 20%;
+}
+
+.height50 {
+  height: 50%;
+}
+
+.height20 {
+  height: 20%;
+}
+
+.letterSpacing {
+  letter-spacing: 0.1rem;
+}
+
+.letterSpacing015 {
+  letter-spacing: 0.15vw;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.standardMdText {
+  letter-spacing: 0.15vw;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.italic {
+  font-style: italic;
+}
+
+@media screen and (orientation: portrait) {
+  .Button {
+    font-size: 1.8vh;
+  }
+
+  .Highlight {
+    transform: scale(1.1);
+  }
+}

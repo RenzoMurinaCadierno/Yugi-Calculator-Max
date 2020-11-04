@@ -1,0 +1,86 @@
+/* mobile first */
+.ToastText {
+  font-size: 2vw;
+  font-weight: bold;
+  font-style: italic;
+  color: var(--secondary-2);
+  text-shadow: var(--text-shadow-secondary);
+  letter-spacing: 0.2vw;
+}
+
+.ToastTextInactive {
+  color: var(--primary-2);
+  text-shadow: unset;
+}
+
+.Title {
+  width: 5vw;
+  font-size: 2.2vw;
+  font-weight: bold;
+  letter-spacing: 0.15vw;
+}
+
+.SfxSVG {
+  cursor: pointer;
+  width: 30%;
+}
+
+.Active {
+  filter: drop-shadow(0 0 5px var(--secondary-0))
+    drop-shadow(0 0 7px var(--secondary-0))
+    drop-shadow(0 0 10px var(--highlight-0)) opacity(100%) brightness(110%);
+}
+/* end mobile first */
+
+/* all screens portrait */
+@media screen and (orientation: portrait) {
+  .ToastText {
+    font-size: 2.3vh;
+    letter-spacing: 0.2vw;
+  }
+
+  .Title {
+    width: unset;
+    font-size: 2.2vh;
+    letter-spacing: 0.15vw;
+    margin: 0 1.5vw 0.3vh 2.5vw;
+    font-weight: unset;
+    font-style: italic;
+  }
+
+  .SfxSVG {
+    width: 30%;
+    max-width: 7vw;
+  }
+}
+/* end all screens portrait */
+
+/* CSS Transition classes */
+:global(.sfx-in-out-enter-active) {
+  animation: sfxTextAnimation 300ms ease-in-out forwards;
+}
+
+:global(.sfx-in-out-exit-active) {
+  animation: sfxTextAnimation 300ms ease-in-out reverse;
+}
+
+:global(.sfx-in-out-exit) {
+  transform: scale(1);
+}
+/* end CSS Transition classes */
+
+/* keyframes */
+@keyframes sfxTextAnimation {
+  0% {
+    transform: scale(1);
+    color: var(--primary-2);
+  }
+  60% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+    color: var(--secondary-2);
+  }
+}
+/* end keyframes */

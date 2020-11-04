@@ -1,0 +1,91 @@
+/* mobile first */
+.Container {
+  height: 65%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+/* end mobile first */
+
+/* all screens portrait */
+@media screen and (orientation: portrait) {
+  .Container {
+    height: 65%;
+    flex-wrap: wrap;
+    margin: 0 10%;
+  }
+}
+/* end all screens portrait */
+
+/* adjustments for sm portrait up */
+@media (min-width: 450px) and (orientation: portrait) {
+  .Container {
+    height: 60%;
+    margin: 0;
+  }
+}
+/* end adjustments for sm portrait up */
+
+/* CSS Transition global classes */
+:global(.dice-in-out-enter) {
+  transform: scale(0) rotate(360deg);
+  opacity: 0;
+}
+
+:global(.dice-in-out-enter-active) {
+  transform: scale(1) rotate(0deg);
+  opacity: 1;
+}
+
+:global(.dice-in-out-exit) {
+  opacity: 1;
+}
+
+:global(.dice-in-out-exit-active) {
+  transform: scale(0) rotate(360deg);
+  opacity: 0;
+}
+
+:global(.coin-in-out-enter) {
+  transform: scale(0) rotateX(360deg);
+  opacity: 0;
+}
+
+:global(.coin-in-out-enter-active) {
+  transform: scale(1) rotateX(0deg);
+  opacity: 1;
+}
+
+:global(.coin-in-out-exit) {
+  opacity: 1;
+}
+
+:global(.coin-in-out-exit-active) {
+  transform: scale(0) rotateX(360deg);
+  opacity: 0;
+}
+
+:global(.token-in-out-enter-active) {
+  animation: token-in-out 500ms ease-out forwards;
+}
+
+:global(.token-in-out-exit-active) {
+  animation: token-in-out 500ms ease-out reverse;
+}
+
+:global(.token-in-out-exit) {
+  transform: translateX(200vw);
+}
+/* end CSS Transition global classes */
+
+@keyframes token-in-out {
+  0% {
+    transform: translateX(200vw);
+  }
+  60% {
+    transform: translateX(-4vw);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}

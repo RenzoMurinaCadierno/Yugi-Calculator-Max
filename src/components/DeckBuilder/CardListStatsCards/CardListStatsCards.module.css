@@ -1,0 +1,38 @@
+/* mobile first */
+.Container {
+  width: 100%;
+  text-decoration: none;
+  list-style-type: none;
+  padding: 0;
+  margin: 2% 0 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column nowrap;
+}
+/* end mobile first */
+
+/* CSS Transition classNames */
+:global(.card-list-item-slide-enter) {
+  transform: translateX(100vw);
+}
+
+:global(.card-list-item-slide-enter-active) {
+  animation: card-list-item-slide 250ms ease-in reverse;
+}
+
+:global(.card-list-item-slide-exit-active) {
+  animation: card-list-item-slide 250ms ease-in forwards;
+}
+/* end CSS Transition classNames */
+
+/* CSS animation keyframes */
+@keyframes card-list-item-slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(100vw);
+  }
+}
+/* end CSS animation keyframes */

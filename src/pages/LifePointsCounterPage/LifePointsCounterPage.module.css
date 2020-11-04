@@ -1,0 +1,49 @@
+/* mobile first */
+.Container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  overflow: hidden;
+  position: relative;
+}
+
+.CalculatorMiniCircle {
+  right: auto;
+  left: auto;
+  width: 3.5vw;
+  height: 3.5vw;
+}
+
+.CalculatorMiniCircleActive {
+  filter: brightness(140%);
+}
+
+.CalculatorImage {
+  width: 57%;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  filter: brightness(170%);
+}
+/* end mobile first */
+
+/* all devices portrait */
+@media screen and (orientation: portrait) {
+  .CalculatorMiniCircle {
+    width: 3.5vh;
+    height: 3.5vh;
+    left: 2vw;
+    top: 2vw;
+  }
+
+  .CalculatorImage {
+    width: 55%;
+  }
+}
+/* end all devices portrait */

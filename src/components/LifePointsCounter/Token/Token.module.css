@@ -1,0 +1,118 @@
+/* mobile first */
+.Container {
+  width: 9vw;
+  height: 9vw;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 1.5vw;
+  transition: all 330ms;
+}
+
+.Image {
+  width: 6vw;
+  height: 6vw;
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.ImageActive {
+  opacity: 0.8;
+  pointer-events: none;
+}
+
+.TokenQty {
+  position: absolute;
+  top: 1vw;
+  right: 1vw;
+  width: 3.3vw;
+  height: 3.3vw;
+  color: var(--secondary-2);
+  font-size: 2.25vw;
+  font-weight: bold;
+  background-color: rgba(6, 6, 6, 0.8);
+  border-radius: 50%;
+  border: var(--border-secondary);
+  box-shadow: var(--border-shadow-secondary);
+  pointer-events: none;
+  transition: all 250ms;
+}
+
+.TokenQtyActive {
+  color: var(--highlight-0);
+}
+
+.Arrow {
+  position: absolute;
+  width: 5vw;
+  cursor: pointer;
+  border: none;
+  box-shadow: none;
+  user-select: none;
+}
+
+.ArrowImage {
+  width: 5vw;
+  filter: opacity(60%) hue-rotate(310deg);
+}
+
+.Arrow:active,
+.ArrowImage:active {
+  outline: none;
+}
+
+.ArrowImageActive {
+  filter: opacity(100%) brightness(150%) hue-rotate(310deg);
+}
+
+.ArrowTop {
+  top: -2.5vw;
+}
+
+.ArrowRight {
+  right: -2.5vw;
+}
+
+.ArrowBottom {
+  bottom: -2.5vw;
+}
+
+.ArrowLeft {
+  left: -2.5vw;
+}
+/* end mobile first */
+
+/* all screens portrait */
+@media screen and (orientation: portrait) {
+  .Container {
+    width: 22vw;
+    height: 22vw;
+  }
+
+  .Image {
+    width: 12vw;
+    height: 12vw;
+  }
+
+  .ImageActive {
+    opacity: 0.8;
+  }
+
+  .TokenQty {
+    top: 4vw;
+    right: 4vw;
+    width: 7vw;
+    height: 7vw;
+    font-size: 5vw;
+  }
+
+  .Arrow {
+    width: 9vw;
+  }
+
+  .ArrowImage {
+    width: 9vw;
+  }
+}
+/* end all screens portrait */

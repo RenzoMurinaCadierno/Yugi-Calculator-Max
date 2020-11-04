@@ -1,0 +1,67 @@
+/* mobile first */
+.Container {
+  border: var(--border-secondary);
+  border-radius: 3vw;
+  box-shadow: var(--border-shadow-secondary);
+  outline: none;
+  position: relative;
+  transition: all 0.3s ease;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.Content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Icon {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+  background-color: var(--primary-0);
+  border-radius: 50%;
+}
+
+.ExpandContainer {
+  box-shadow: 0 0 1.5vw var(--secondary-0), 0 0 2vw var(--secondary-0);
+}
+
+.ExpandContent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 90%;
+  height: 100%;
+  color: var(--secondary-2);
+  overflow: hidden;
+  animation: growText 350ms linear forwards;
+}
+
+.ExpandIcon {
+  z-index: 1;
+  border-radius: 50%;
+  border: 0px solid transparent;
+  box-shadow: 0 0 0.5vw var(--primary-1), 0 0 1vw var(--primary-1),
+    0 0 1.5vw var(--primary-1);
+  background-color: var(--primary-0);
+}
+
+.Clickable {
+  cursor: pointer;
+}
+/* mobile first */
+
+/* CSS animation keyframes */
+@keyframes growText {
+  0% {
+    font-size: 0;
+  }
+
+  100% {
+    font-size: inherit;
+  }
+}
+/* end CSS animation keyframes */

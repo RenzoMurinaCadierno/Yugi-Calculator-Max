@@ -1,0 +1,51 @@
+/* mobile first */
+.Container {
+  width: 100%;
+}
+
+.SlideBar {
+  height: 87%;
+  background-color: var(--primary-0);
+  border: var(--border-primary);
+  box-shadow: var(--border-shadow-primary);
+  border-radius: 1rem;
+  margin: auto;
+  position: relative;
+}
+
+.SliderSwitchOff {
+  width: 2.5vw;
+  height: 2.5vw;
+  background-color: var(--secondary-0);
+  border-radius: 50%;
+  border: var(--border-secondary);
+  box-shadow: var(--border-shadow-secondary);
+  position: absolute;
+  top: -0.8vw;
+  right: 4.2vw;
+  transition: all 0.2s ease-out;
+}
+
+.SliderSwitchOn {
+  right: -0.2vw;
+}
+
+.TextOff {
+  position: absolute;
+  top: -3.2vw;
+  right: -4vw;
+  color: var(--primary-0);
+  font-size: 2vw;
+  font-weight: 700;
+  letter-spacing: 0.05rem;
+  text-shadow: 0 0 7px var(--primary-2);
+  transition: all 0.2s ease;
+}
+
+.TextOn {
+  top: 1.4vw;
+  left: -10vw;
+  color: var(--secondary-0);
+  text-shadow: 0 0 7px var(--secondary-2);
+}
+/* end mobile first */

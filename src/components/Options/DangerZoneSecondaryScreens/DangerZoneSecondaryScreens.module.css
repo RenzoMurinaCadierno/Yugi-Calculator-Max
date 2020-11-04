@@ -1,0 +1,19 @@
+/* mobile first */
+.ToastText {
+  font-size: 2vw;
+  font-weight: bold;
+  font-style: italic;
+  color: var(--secondary-1);
+  letter-spacing: 0.2vw;
+  width: 100%;
+}
+/* end mobile first */
+
+/* all screens portrait */
+@media screen and (orientation: portrait) {
+  .ToastText {
+    font-size: 2vh;
+    letter-spacing: 0.2vw;
+  }
+}
+/* end all screens portrait */

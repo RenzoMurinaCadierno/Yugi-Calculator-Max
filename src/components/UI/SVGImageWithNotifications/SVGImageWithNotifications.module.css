@@ -1,0 +1,109 @@
+/* mobile first */
+.Container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: all 250ms ease;
+}
+
+.Disabled {
+  filter: grayscale(0.8);
+  cursor: not-allowed;
+}
+
+.Clickable {
+  opacity: 0.8;
+  cursor: pointer;
+  filter: drop-shadow(0 0 0.1vw var(--secondary-2));
+}
+
+.Clickable:hover {
+  opacity: 1;
+}
+
+.Image {
+  width: 100%;
+}
+
+.Text {
+  position: absolute;
+  color: var(--secondary-2);
+  font-weight: bold;
+  font-size: 1.7vw;
+  text-shadow: var(--overlay-text-shadow);
+  bottom: -2%;
+  right: 0;
+  left: 0;
+  margin: auto;
+}
+
+.MiniCircle {
+  position: absolute;
+  margin: 0;
+  top: unset;
+  bottom: unset;
+  right: unset;
+  left: unset;
+  width: 42%;
+  height: 40%;
+}
+/* end mobile first */
+
+/* all devices portrait */
+@media screen and (orientation: portrait) {
+  .Text {
+    top: 50%;
+    font-size: 3.4vw;
+  }
+}
+/* end all devices portrait */
+
+/* miniCirclePosition prop classes */
+.bottom-left {
+  bottom: 0;
+  left: 0;
+}
+
+.bottom-right {
+  bottom: 0;
+  right: 0;
+}
+
+.top-left {
+  top: 0;
+  left: 0;
+}
+
+.top-right {
+  top: 0;
+  right: 0;
+}
+/* end miniCirclePosition prop classes */
+
+/* miniCircle CSSTransition animation classes */
+:global(.animate-text-enter) {
+  transform: translate(0);
+}
+
+:global(.animate-text-enter-active) {
+  animation: animate-text 250ms ease-out forwards;
+}
+
+:global(.animate-text-exit-active) {
+  animation: animate-text 250ms ease-out forwards;
+}
+/* end  miniCircle CSSTransition animation classes */
+
+/* miniCircle animation keyframes */
+@keyframes animate-text {
+  0% {
+    transform: translate(0);
+  }
+  50% {
+    transform: translate(45deg);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+/* end miniCircle animation keyframes */

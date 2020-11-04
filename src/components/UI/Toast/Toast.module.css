@@ -1,0 +1,80 @@
+/* mobile first */
+.Container {
+  position: absolute;
+  top: 82%;
+  right: 20%;
+  left: 20%;
+  bottom: 5%;
+  z-index: 20;
+  width: auto;
+  height: auto;
+  background-color: rgba(0, 0, 0, 0.8);
+  border: var(--border-primary);
+  box-shadow: var(--border-shadow-primary);
+  border-radius: 0.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  overflow: hidden;
+}
+
+.Children {
+  width: 87%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Cross {
+  width: 6.5%;
+  filter: brightness(140%);
+  cursor: pointer;
+  user-select: none;
+}
+/* end mobile first */
+
+/* all devices portrait */
+@media screen and (orientation: portrait) {
+  .Container {
+    top: 87%;
+    right: 10%;
+    left: 10%;
+    bottom: 4%;
+  }
+
+  .Children {
+    width: 84%;
+    height: 100%;
+  }
+
+  .Cross {
+    width: 8%;
+  }
+}
+/* all devices portrait */
+
+/* CSS Transition classNames */
+:global(.toast-in-out-enter-active) {
+  animation: toast-in-out 250ms ease-in-out forwards;
+}
+
+:global(.toast-in-out-exit-active) {
+  animation: toast-in-out 250ms ease-in-out reverse;
+}
+
+:global(.toast-in-out-exit) {
+  transform: translateY(-200vw);
+}
+/* end CSS Transition classNames */
+
+/* CSS animation keyframes */
+@keyframes toast-in-out {
+  0% {
+    transform: translateY(200vw);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+/* end CSS animation keyframes */

@@ -1,0 +1,90 @@
+/* mobile first */
+.SpinnerContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Spinner {
+  width: 20%;
+  height: 20%;
+}
+/* end mobile first */
+
+/* CSS Transition classNames */
+:global(.left-slide-enter) {
+  /* transform: translateX(-100vw); */
+  opacity: 0;
+}
+
+:global(.left-slide-enter-active) {
+  position: fixed;
+  animation: slideLeft 250ms linear forwards;
+}
+
+:global(.left-slide-exit-active) {
+  position: fixed;
+  animation: slideRight 250ms linear reverse;
+}
+
+:global(.left-slide-exit) {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+:global(.left-slide-exit-done) {
+  opacity: 0;
+}
+
+:global(.right-slide-enter) {
+  /* transform: translateX(100vw); */
+  opacity: 0;
+}
+
+:global(.right-slide-enter-active) {
+  position: fixed;
+  animation: slideRight 250ms linear forwards;
+}
+
+:global(.right-slide-exit-active) {
+  position: fixed;
+  animation: slideLeft 250ms linear reverse;
+}
+
+:global(.right-slide-exit) {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+:global(.right-slide-exit-done) {
+  opacity: 0;
+}
+/* end CSS Transition classNames */
+
+/* CSS animation keyframes */
+@keyframes slideLeft {
+  from {
+    /* transform: translate3d(-100vw, -100vw, 0); */
+    transform: translateX(-100vw);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideRight {
+  from {
+    /* transform: translate3d(100vw, 100vw, 0); */
+    transform: translateX(100vw);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+/* end CSS animation keyframes */

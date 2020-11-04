@@ -1,0 +1,398 @@
+/* mobile first */
+.ToastBody {
+  font-size: 2vw;
+  font-weight: bold;
+  font-style: italic;
+  color: var(--secondary-1);
+  letter-spacing: 0.2vw;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.ToastHref {
+  display: inline-block;
+  color: var(--secondary-2);
+  text-shadow: var(--text-shadow-secondary);
+  margin: 0 1vw;
+}
+
+.ContactContent {
+  width: 68vw;
+}
+
+.IconContainer {
+  position: fixed;
+  right: 13%;
+  width: 6vw;
+  height: 6vw;
+  opacity: 0.6;
+  font-size: 2.3vw;
+  letter-spacing: 0.1vw;
+}
+
+.IconYugipedia,
+.IconLinkedin {
+  top: 29%;
+}
+
+.IconNonYugiohAssets,
+.IconGithub {
+  top: 47%;
+}
+
+.IconReact,
+.IconMail {
+  top: 65%;
+}
+
+.ExpandIconContainer {
+  width: 38%;
+  opacity: 1;
+}
+
+.LargeContainer {
+  width: 60vw;
+  height: 55vh;
+  top: 25vh;
+  right: 13vw;
+  z-index: 1;
+}
+
+.FixIconImage {
+  width: 6vw;
+  height: 6vw;
+  right: 13.15%;
+  position: fixed;
+}
+
+.IconYugipediaFixed {
+  top: 29.2%;
+}
+
+.IconNonYugiohAssetsFixed {
+  top: 47.3%;
+}
+
+.IconReactFixed {
+  top: 65.2%;
+}
+
+.CardAndPricesSites {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.CardSite {
+  font-size: 2.8vw;
+  font-weight: bold;
+  font-style: italic;
+  color: var(--secondary-2);
+  letter-spacing: 0.15vw;
+  text-shadow: 0 0 1.5vw var(--secondary-2);
+  text-decoration: none;
+  margin: 0 4vw 4vh 4vw;
+  cursor: pointer;
+}
+
+.CardSite:hover {
+  text-shadow: 0 0 1.5vw var(--highlight-0);
+}
+
+.IconContentLarge {
+  overflow-y: auto;
+}
+
+.IconContentLarge > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column wrap;
+  margin: 0vh 1vw 2vh 2vw;
+  position: absolute;
+  top: 3.5vh;
+  /* pointer-events: none; */
+}
+
+.IconContentLarge > div div,
+.IconContentLarge > div a,
+.IconContentLarge > div h1,
+.IconContentLarge > div span {
+  font-style: italic;
+  font-weight: bold;
+  color: var(--secondary-2);
+}
+
+.IconContentLarge > div > div {
+  font-size: 3.2vw;
+  margin-bottom: 4vh;
+}
+
+.IconContentLarge > div h1,
+.IconContentLarge > div a {
+  text-decoration: none;
+  font-size: 2.8vw;
+  text-shadow: 0 0 1vw var(--secondary-1);
+  margin-bottom: 2vh;
+}
+
+.IconContentLarge > div h1 {
+  margin-top: unset;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.IconContentLarge > div span {
+  color: var(--primary-2);
+  font-size: 2.2vw;
+  margin-bottom: 6vh;
+}
+
+.IconContentLarge > div > span:last-child {
+  margin-bottom: 3vh;
+}
+
+.IconContentLarge > div p {
+  margin: 0 2vw 2vh 2vw;
+  font-size: 2.2vw;
+}
+/* end mobile first */
+
+/* md screens landscape tweaks */
+@media (min-width: 960px) and (orientation: landscape) {
+  .FixIconImage {
+    right: 13.08%;
+  }
+
+  .IconYugipediaFixed {
+    top: 29.15%;
+  }
+
+  .IconNonYugiohAssetsFixed {
+    top: 47.1%;
+  }
+
+  .IconReactFixed {
+    top: 65.15%;
+  }
+}
+/* md screens landscape tweaks */
+
+/* lg screens landscape tweaks */
+@media (min-width: 1800px) and (orientation: landscape) {
+  .FixIconImage {
+    right: 13.02%;
+  }
+
+  .IconYugipediaFixed {
+    top: 29.1%;
+  }
+
+  .IconNonYugiohAssetsFixed {
+    top: 47.1%;
+  }
+
+  .IconReactFixed {
+    top: 65.1%;
+  }
+}
+/* lg screens landscape tweaks */
+
+/* all devices portrait */
+@media screen and (orientation: portrait) {
+  .ToastBody {
+    font-size: 2vh;
+    letter-spacing: 0.2vw;
+  }
+
+  .ToastHref {
+    margin: 0 2vw;
+  }
+
+  .ContactContent {
+    width: 75vw;
+    padding: 0 2vw;
+    margin-bottom: 7vh;
+  }
+
+  .FixIconImage,
+  .IconContainer {
+    top: 77%;
+    width: 10.5vw;
+    height: 10.5vw;
+    border-radius: 5.5vw;
+    font-size: 3.9vw;
+    letter-spacing: 0.1vw;
+  }
+
+  .IconYugipedia,
+  .IconLinkedin {
+    right: 19%;
+  }
+
+  .IconNonYugiohAssets,
+  .IconGithub {
+    right: 44%;
+  }
+
+  .IconReact,
+  .IconMail {
+    right: 69%;
+  }
+
+  .ExpandIconContainer {
+    width: 60%;
+    right: 19%;
+    top: 69%;
+  }
+
+  .LargeContainer {
+    width: 60.5%;
+    top: 28%;
+    height: 55%;
+  }
+
+  .IconYugipediaFixed {
+    right: 19.2%;
+    top: 77.2%;
+  }
+
+  .IconNonYugiohAssetsFixed {
+    right: 44.3%;
+    top: 77.2%;
+  }
+
+  .IconLinkedinFixed,
+  .IconReactFixed {
+    right: 69.2%;
+    top: 77.2%;
+  }
+
+  .IconContentLarge {
+    width: 95%;
+  }
+
+  .IconContentLarge > div {
+    margin: 0 2vw 0 2vw;
+    top: 2.5vh;
+  }
+
+  .IconContentLarge > div > div {
+    font-size: 5.2vw;
+    letter-spacing: 0.2vw;
+    margin-bottom: 4vh;
+  }
+
+  .IconContentLarge > div h1,
+  .IconContentLarge > div a {
+    font-size: 5vw;
+    letter-spacing: 0.2vw;
+    margin-bottom: 1.2vh;
+  }
+
+  .IconContentLarge > div span {
+    font-size: 4.2vw;
+    letter-spacing: 0.2vw;
+    margin-bottom: 4vh;
+  }
+
+  .IconContentLarge > div > span:last-child {
+    margin-bottom: 4.5vh;
+  }
+
+  .IconContentLarge > div p {
+    margin: 0 0 0.7vh 0;
+    font-size: 4.2vw;
+  }
+
+  .IconContentLarge > div > p:last-child {
+    margin-bottom: 7.5vh;
+  }
+
+  .CardAndPricesSites {
+    margin: 0 1vw 2vh 1vw;
+  }
+
+  .CardSite {
+    font-size: 2.4vh;
+    margin: 1vh 2vw;
+  }
+}
+/* end all devices portrait */
+
+/* iPad and lg screens tweaks */
+@media (min-width: 760px) and (orientation: portrait) {
+  .ToastHref {
+    margin: 0 1vw;
+  }
+
+  .ContactContent {
+    padding: 0 1vw;
+    margin-bottom: 9vh;
+  }
+
+  .IconContainer {
+    top: 74.5%;
+  }
+
+  .ExpandIconContainer {
+    top: 65.5%;
+    opacity: 1;
+  }
+
+  .LargeContainer {
+    width: 60.8%;
+    top: 28.8%;
+    height: 55%;
+  }
+
+  .IconYugipediaFixed {
+    top: 74.5%;
+    right: 19.1%;
+  }
+
+  .IconNonYugiohAssetsFixed {
+    top: 74.5%;
+    right: 44.1%;
+  }
+
+  .IconReactFixed {
+    top: 74.5%;
+    right: 69.1%;
+  }
+
+  .IconContentLarge > div > span:last-child {
+    margin-bottom: 7vh;
+  }
+
+  .IconContentLarge > div > p:last-child {
+    margin-bottom: 10vh;
+  }
+}
+/* end iPad and lg screens tweaks */
+
+/* Surface Duo and devices alike landscape tweaks*/
+@media (max-width: 600px) and (min-height: 700px) and (max-height: 725px) {
+  .FixIconImage,
+  .IconContainer {
+    top: 75%;
+  }
+
+  .ExpandIconContainer {
+    top: 65%;
+  }
+
+  .LargeContainer {
+    top: 27.6%;
+  }
+
+  .IconContentLarge > div > p:last-child {
+    margin-bottom: 9vh;
+  }
+
+  .CardSite {
+    font-size: 2.8vh;
+  }
+}
+/* end Surface Duo and devices alike landscape tweaks*/

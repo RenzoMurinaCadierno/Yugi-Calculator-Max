@@ -1,0 +1,171 @@
+/* mobile first */
+.Container {
+  width: 70%;
+  height: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.Bright0 {
+  filter: drop-shadow(0 0 5px var(--secondary-0))
+    drop-shadow(0 0 7px var(--secondary-1))
+    drop-shadow(0 0 10px var(--highlight-0)) opacity(50%);
+}
+
+.LogMenuIcon {
+  /* width: 10%; */
+  width: 6.6vw;
+  height: auto;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.LogMenuIconActive,
+.LogMenuIcon:active,
+.LogMenuIcon:focus,
+.LogMenuIcon:hover {
+  filter: drop-shadow(0 0 5px var(--secondary-0))
+    drop-shadow(0 0 7px var(--secondary-1))
+    drop-shadow(0 0 10px var(--highlight-0));
+  transform: scale(1.1);
+}
+
+.LogIconTrash:active,
+.LogIconAll {
+  color: var(--primary-0);
+  text-shadow: 0 0 5px var(--secondary-0), 0 0 7px var(--secondary-1),
+    0 0 15px var(--highlight-0);
+  filter: opacity(50%);
+  font-size: 6.5vw;
+  font-weight: bold;
+  letter-spacing: 0.8vw;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.LogIconAllActive,
+.LogIconAll:active,
+.LogIconAll:focus,
+.LogIconAll:hover {
+  filter: opacity(1);
+  transform: scale(1.1);
+  text-shadow: 0 0 7px var(--secondary-0), 0 0 10px var(--secondary-1),
+    0 0 20px var(--highlight-0), 0 0 22px var(--highlight-1);
+}
+
+.LogIconAll {
+  margin-bottom: 1vh;
+}
+
+.LogIconDie {
+  width: 9.4vw;
+}
+
+.LogIconClock {
+  width: 7.3vw;
+}
+
+.LogIconTrash {
+  width: 7.6vw;
+}
+/* end mobile first */
+
+/* all devices portrait */
+@media screen and (orientation: portrait) {
+  .Container {
+    height: 18%;
+    flex-wrap: wrap;
+    margin: 2vh 0;
+  }
+
+  .LogMenuIcon {
+    width: 18%;
+    margin: 0 1.5vw;
+  }
+
+  .LogIconAll {
+    order: 1;
+    margin: 0 5vw 0 8vw;
+    font-size: 6.3vh;
+  }
+
+  .LogIconDie {
+    width: 18vw;
+  }
+
+  .LogIconClock {
+    width: 14.5vw;
+  }
+
+  .LogIconTrash {
+    width: 14vw;
+    margin: 0 8vw 0 5vw;
+    order: 2;
+  }
+}
+/* end all devices portrait*/
+
+/* lg devices portrait tweaks */
+@media (min-height: 1024px) and (orientation: portrait) {
+  .Container {
+    height: 18%;
+  }
+
+  .LogMenuIcon {
+    width: 13%;
+    margin: 0 1.5vw;
+  }
+
+  .LogIconAll {
+    width: 13vw;
+  }
+
+  .LogIconDie {
+    width: 13vw;
+  }
+
+  .LogIconClock {
+    width: 10.5vw;
+  }
+
+  .LogIconTrash {
+    width: 11vw;
+    margin: 0 10vw 0 5vw;
+  }
+}
+/* end lg devices portrait tweaks */
+
+/* lg devices landscape tweaks */
+@media (min-width: 1024px) and (orientation: landscape) {
+  .LogIconAll {
+    font-size: 7.5vw;
+  }
+}
+/* end lg devices landscape tweaks */
+
+/* Surface Duo and devices alike tweaks*/
+@media (max-width: 600px) and (min-height: 700px) and (max-height: 725px) and (orientation: portrait) {
+  .LogMenuIcon {
+    width: 10vw;
+    margin: 0;
+  }
+
+  .LogIconAll {
+    font-size: 6.3vh;
+  }
+
+  .LogIconDie {
+    width: 15vw;
+  }
+
+  .LogIconClock {
+    width: 12vw;
+  }
+
+  .LogIconTrash {
+    width: 12vw;
+    margin-right: 7.5vw;
+  }
+}
+/* end Surface Duo and devices alike tweaks*/

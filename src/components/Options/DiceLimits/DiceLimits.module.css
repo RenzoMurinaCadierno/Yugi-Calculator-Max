@@ -1,0 +1,57 @@
+/* mobile first */
+.LimitAndTestTag {
+  width: 5vw;
+  font-size: 2.2vw;
+  font-weight: bold;
+  letter-spacing: 0.15vw;
+  margin-left: 2vw;
+}
+
+.DiceInput {
+  width: 4.9vw;
+  height: 4.75vw;
+  font-size: 2.5vw;
+  font-weight: bold;
+  letter-spacing: 0.2vw;
+  outline: none;
+}
+
+.Die {
+  width: 5.25vw;
+  height: 4.4vw;
+  padding: 0.5vh 0;
+  margin-right: 0.5vw;
+  font-size: 2.7vw;
+  font-weight: bold;
+  line-height: 4.1vw;
+  color: var(--secondary-2);
+}
+/* end mobile first */
+
+/* all devices portrait */
+@media screen and (orientation: portrait) {
+  .LimitAndTestTag {
+    width: unset;
+    font-size: 2.2vh;
+    letter-spacing: 0.15vw;
+    margin: 0 1.5vw 0.3vh 2.5vw;
+    font-weight: unset;
+    font-style: italic;
+  }
+
+  .DiceInput {
+    width: 8.5vw;
+    height: 8.3vw;
+    font-size: 2.3vh;
+    padding: unset;
+  }
+
+  .Die {
+    width: 8.4vw;
+    height: 6.5vw;
+    line-height: 6vw;
+    font-size: 2.5vh;
+    margin-right: 1.5vw;
+  }
+}
+/* end all devices portrait */

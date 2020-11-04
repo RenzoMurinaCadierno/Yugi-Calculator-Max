@@ -1,0 +1,156 @@
+/* mobile first */
+.Backdrop {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 10;
+}
+
+.ContentContainer {
+  position: absolute;
+  top: 15%;
+  right: 10%;
+  left: 10%;
+  bottom: 15%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 11;
+  width: auto;
+  height: auto;
+  border: var(--border-secondary);
+  box-shadow: var(--border-shadow-secondary);
+  border-radius: 0.2rem;
+}
+/* end mobile first */
+
+/* extra properties */
+.Small {
+  top: 25%;
+  right: 10%;
+  left: 10%;
+  bottom: 25%;
+}
+
+.Large {
+  top: 11%;
+  right: 7%;
+  left: 7%;
+  bottom: 11%;
+}
+
+.Scrollable {
+  overflow: auto;
+}
+
+.Flex {
+  display: flex;
+}
+/* end extra properties */
+
+/* animation classes */
+.FadeIn {
+  animation: fade-in-out 200ms ease-in forwards;
+}
+
+.FadeOut {
+  animation: fade-in-out 200ms ease-in reverse;
+}
+
+.ScaleIn {
+  animation: scale-in-out 200ms ease-in forwards;
+}
+
+.ScaleOut {
+  animation: scale-in-out 200ms ease-in reverse;
+}
+
+.TranslateDownIn {
+  animation: translate-down-in-out 200ms ease-in forwards;
+}
+
+.TranslateDownOut {
+  animation: translate-down-in-out 200ms ease-out reverse;
+}
+/* end animation classes */
+
+/* xs devices portrait */
+@media (max-width: 500px) {
+  .Small {
+    right: 15%;
+    left: 15%;
+  }
+
+  .Large {
+    top: 7%;
+    right: 8%;
+    left: 8%;
+    bottom: 7%;
+  }
+}
+/* end xs devices portrait */
+
+/* lg landscape devices */
+@media (min-width: 1024px) {
+  .Small {
+    right: 30%;
+    left: 30%;
+  }
+
+  .Large {
+    top: 8%;
+    bottom: 8%;
+  }
+}
+/* end lg landscape devices */
+
+/* xs devices landscape */
+@media (max-height: 500px) {
+  .Small {
+    right: 25%;
+    left: 25%;
+  }
+}
+/* end xs devices landscape */
+
+/* lg portrait devices */
+@media (min-height: 1024px) {
+  .Small {
+    right: 25%;
+    left: 25%;
+  }
+}
+/* end lg portrait devices */
+
+/* animation keyframes */
+@keyframes fade-in-out {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes scale-in-out {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+@keyframes translate-down-in-out {
+  0% {
+    transform: translateY(-200vw);
+  }
+  50% {
+    transform: translateY(5vw);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+/* end animation keyframes */

@@ -1,0 +1,148 @@
+/* mobile first */
+.ToastText {
+  font-size: 2vw;
+  font-weight: bold;
+  font-style: italic;
+  color: var(--secondary-1);
+  letter-spacing: 0.2vw;
+  width: 100%;
+}
+
+.ToastLogItems {
+  color: var(--secondary-2);
+  text-shadow: var(--text-shadow-secondary);
+  margin: 0.7vh 0.5vw;
+  display: inline-block;
+}
+
+.Title {
+  width: 5vw;
+  font-size: 2.2vw;
+  font-weight: bold;
+  letter-spacing: 0.15vw;
+}
+
+.LifePointsSVG,
+.DiceSVG,
+.CoinSVG,
+.TimerSVG {
+  cursor: pointer;
+}
+
+.LifePointsSVG {
+  width: 4.5vw;
+}
+
+.DiceSVG {
+  width: 6.4vw;
+}
+
+.CoinSVG {
+  width: 4.35vw;
+  margin-right: 0.5vw;
+  filter: opacity(50%) contrast(70%);
+}
+
+.TimerSVG {
+  margin-top: 0.2vw;
+  width: 5vw;
+}
+
+.Active {
+  filter: drop-shadow(0 0 5px var(--secondary-0))
+    drop-shadow(0 0 7px var(--secondary-0))
+    drop-shadow(0 0 10px var(--highlight-0)) opacity(100%);
+}
+
+.CoinActive {
+  filter: drop-shadow(0 0 5px var(--secondary-0))
+    drop-shadow(0 0 7px var(--secondary-0))
+    drop-shadow(0 0 8px var(--highlight-1))
+    drop-shadow(0 0 8px var(--highlight-0)) opacity(100%) contrast(100%)
+    brightness(115%);
+}
+/* end mobile first */
+
+/* all screens portrait */
+@media screen and (orientation: portrait) {
+  .ToastText {
+    font-size: 2vh;
+    letter-spacing: 0.2vw;
+  }
+
+  .ToastLogItems {
+    font-size: 1.8vh;
+    margin: 1vh 0.5vw;
+  }
+
+  .Title {
+    width: unset;
+    font-size: 2.2vh;
+    letter-spacing: 0.15vw;
+    margin: 0 1.5vw 0.3vh 2.5vw;
+    font-weight: unset;
+    font-style: italic;
+  }
+
+  .LifePointsSVG {
+    width: 15%;
+    max-width: 7.8vw;
+    margin-top: 0.5vw;
+  }
+
+  .DiceSVG {
+    width: 22%;
+    max-width: 11vw;
+  }
+
+  .CoinSVG {
+    width: 13.5%;
+    max-width: 8vw;
+  }
+
+  .TimerSVG {
+    margin-top: 0.5vw;
+    width: 16%;
+    max-width: 9vw;
+  }
+}
+/* end all screens portrait */
+
+/* CSS Transition classNames */
+:global(.log-type-in-out-enter) {
+  transform: translateX(-200vw);
+}
+
+:global(.log-type-in-out-enter-active) {
+  animation: logAnimation 500ms ease-in-out forwards;
+}
+
+:global(.log-type-in-out-exit-active) {
+  position: absolute;
+  top: 43%;
+  animation: logAnimation 500ms ease-in-out reverse;
+}
+
+:global(.log-type-in-out-exit) {
+  transform: translateX(-200vw);
+}
+/* end CSS Transition classNames */
+
+/* CSS animation keyframes */
+@keyframes logAnimation {
+  0% {
+    transform: translateX(-200vw);
+  }
+  60% {
+    transform: translateX(0vw);
+    color: var(--primary-2);
+  }
+  80% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+    color: var(--secondary-2);
+  }
+}
+/* end CSS animation keyframes */

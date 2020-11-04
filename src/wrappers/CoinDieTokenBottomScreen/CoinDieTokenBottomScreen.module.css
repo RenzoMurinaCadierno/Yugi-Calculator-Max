@@ -1,0 +1,45 @@
+/* mobile first */
+.Container {
+  width: 100%;
+  height: 35%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.Container > button {
+  font-size: 2.3vw;
+  font-weight: bold;
+}
+/* end mobile first */
+
+/* all screens portrait */
+@media screen and (orientation: portrait) {
+  .Container {
+    height: 35%;
+    flex-direction: column;
+  }
+
+  .Container > button {
+    margin: 1vh;
+    font-size: 4.5vw;
+  }
+
+  .Container > button:nth-child(1) {
+    order: 1;
+  }
+
+  .Container > button:nth-child(3) {
+    order: 2;
+    margin-bottom: 3vh;
+  }
+}
+/* end all screens portrait */
+
+/* adjustments for sm portrait up */
+@media (min-width: 450px) and (orientation: portrait) {
+  .Container {
+    height: 40%;
+  }
+}
+/* end adjustments for sm portrait up */

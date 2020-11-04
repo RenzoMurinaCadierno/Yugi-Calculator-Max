@@ -1,0 +1,15 @@
+/* mobile first */
+.Container {
+  display: flex;
+  align-items: center;
+}
+/* end mobile first */
+
+/* all devices portrait */
+@media screen and (orientation: portrait) {
+  .Container {
+    flex-direction: column;
+    height: 100%;
+  }
+}
+/* end all devices portrait */

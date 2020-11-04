@@ -1,0 +1,27 @@
+/* CSS Transition classNames */
+:global(.grow-enter) {
+  transform: scale(0);
+}
+
+:global(.grow-enter-active) {
+  animation: grow 100ms ease-in-out forwards;
+}
+
+:global(.grow-exit-active) {
+  animation: grow 100ms ease-in-out reverse;
+}
+/* end CSS Transition classNames */
+
+/* CSS animation keyframes */
+@keyframes grow {
+  0% {
+    transform: scale(0.25);
+  }
+  50% {
+    transform: scale(1.25);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+/* end CSS animation keyframes */

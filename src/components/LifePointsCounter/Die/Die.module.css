@@ -1,0 +1,42 @@
+/* mobile first */
+.Container {
+  width: 11.5vw;
+  height: 11.5vw;
+  color: var(--highlight-0);
+  border: var(--border-secondary);
+  box-shadow: var(--border-shadow-primary);
+  border-radius: 0.8vw;
+  line-height: 10.7vw;
+  font-size: 5vw;
+  cursor: pointer;
+  transition: all 330ms;
+}
+
+.Container:hover {
+  background-color: var(--background-hover-primary);
+}
+/* end mobile first */
+
+/* all screens portrait */
+@media screen and (orientation: portrait) {
+  .Container {
+    width: 22vw;
+    height: 22vw;
+    font-size: 10vw;
+    line-height: 20.5vw;
+    border-radius: 0.8vh;
+  }
+}
+/* end all screens portrait */
+
+/* CSS Transition animations */
+:global(.spin-enter-active) {
+  transform: scale(0) rotate(360deg);
+  opacity: 1;
+}
+
+:global(.spin-exit-active) {
+  transform: scale(0) rotate(360deg);
+  opacity: 0;
+}
+/* end CSS Transition animations */

@@ -1,0 +1,78 @@
+/* mobile first */
+.Container {
+  overflow-y: auto;
+  width: 95vw;
+  height: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: row wrap;
+  /* -ms-overflow-style: none;  /* Internet Explorer 10+ */
+  /*scrollbar-width: none* */ /* Firefox */
+}
+
+/* .Container::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+/*}*/
+
+.Card {
+  width: 37vw;
+  height: 13vh;
+  margin: 1vh 2vw 5vh 2vw;
+  padding: 1vw;
+  border: var(--border-secondary);
+  box-shadow: var(--border-shadow-secondary);
+  border-radius: 0.5rem;
+  color: var(--secondary-2);
+  font-size: 2.3vw;
+  font-style: italic;
+  letter-spacing: 0.1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.Card:hover,
+.Card:active {
+  background: var(--background-hover-secondary);
+}
+
+.SpinnerContainer {
+  width: 15%;
+  height: 15%;
+}
+
+.ExtraInfo > div {
+  font-size: 2.5vw;
+  font-style: italic;
+  padding: 2vh 2vw;
+  letter-spacing: 0.2vw;
+  color: var(--secondary-0);
+}
+/* end mobile first */
+
+/* all devices portrait */
+@media screen and (orientation: portrait) {
+  .Container {
+    width: 92vw;
+    height: 95vh;
+  }
+
+  .Card {
+    width: 95vw;
+    height: 10vh;
+    margin: 1vh 2vw 1vh 2vw;
+    padding: 0 3vw;
+    font-size: 2.6vh;
+  }
+
+  .Card:first-child {
+    margin-top: 1.8vh;
+  }
+
+  .ExtraInfo > div {
+    font-size: 3vh;
+  }
+}
+/* end all devices portrait */

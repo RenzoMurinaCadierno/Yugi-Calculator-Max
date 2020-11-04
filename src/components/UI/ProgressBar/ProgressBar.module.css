@@ -1,0 +1,42 @@
+/* mobile first */
+.Container {
+  width: 100%;
+  border: var(--border-primary);
+  border-radius: 0.7vw;
+  box-shadow: var(--border-shadow-primary);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Timer {
+  color: var(--secondary-2);
+  font-size: 3vw;
+  line-height: 2vh;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.Progress {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--primary-0);
+  border-radius: 0.4vw;
+  transition: all 1s ease-out;
+  pointer-events: none;
+}
+
+.Percentage {
+  position: absolute;
+  color: var(--primary-2);
+  top: -5.5vh;
+  right: 0;
+  font-size: 2.1vw;
+  font-weight: bold;
+  font-style: italic;
+  letter-spacing: 0.15vw;
+}
+/* end mobile first */

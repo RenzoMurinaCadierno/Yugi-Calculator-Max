@@ -1,0 +1,140 @@
+/* mobile first */
+.Container {
+  width: 100%;
+}
+
+.Menu {
+  position: sticky;
+  height: 0;
+  top: 6vh;
+  padding: 0 0.5vw;
+  margin: 0;
+  list-style-type: none;
+  color: var(--primary-0);
+  text-transform: capitalize;
+  font-size: 3vw;
+  font-style: italic;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  z-index: 1;
+}
+
+.Active {
+  color: var(--secondary-2);
+  text-shadow: var(--text-shadow-secondary);
+}
+
+.MenuItem {
+  width: 50%;
+  background-color: rgba(0, 0, 0, 0.8);
+  box-shadow: var(--border-shadow-background);
+  transition: all 250ms ease;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  position: relative;
+}
+
+.Content {
+  list-style-type: none;
+  padding: 0 1vw 2vh 1vw;
+  margin: 0 1vw;
+  text-align: left;
+  color: var(--secondary-1);
+  font-size: 2.6vw;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.Content li {
+  margin: 3vh 1vw;
+}
+
+.Content li:nth-child(1) {
+  margin-top: 12vh;
+}
+/* end mobile first */
+
+/* all screens portrait */
+@media screen and (orientation: portrait) {
+  .Menu {
+    font-size: 3.5vh;
+    padding: 0 1.5vw;
+    top: 4vh;
+  }
+
+  .Content {
+    font-size: 2.5vh;
+    padding: 0 2vw 0 2vw;
+    margin: 0;
+  }
+
+  .Content li:nth-child(1) {
+    margin-top: 7.5vh;
+  }
+
+  .Content li {
+    margin: 2vh 1vw;
+  }
+}
+/* end all screens portrait */
+
+/* Galaxy Fold and devices alike portrait tweaks*/
+@media (max-width: 300px) and (max-height: 700px) {
+  .Menu {
+    font-size: 3vh;
+  }
+}
+/* end Galaxy Fold and devices alike portrait tweaks*/
+
+/* Surface Duo and devices alike landscape tweaks*/
+@media (max-width: 725px) and (min-height: 590px) and (max-height: 600px) {
+  .Menu {
+    font-size: 4.5vh;
+  }
+}
+/* end Surface Duo and devices alike landscape tweaks*/
+
+/* Surface Duo and devices alike portrait tweaks*/
+@media (max-width: 600px) and (min-height: 700px) and (max-height: 725px) {
+  .Content {
+    font-size: 3vh;
+  }
+}
+/* end Surface Duo and devices alike portrait tweaks*/
+
+/* CSSTransition animations */
+:global(.li-items-slide-enter) {
+  transform: translateX(-100vw);
+}
+
+:global(.li-items-slide-enter-active) {
+  animation: li-items-slide-enter 250ms ease-in forwards;
+}
+
+:global(.li-items-slide-exit-active) {
+  animation: li-items-slide-exit 250ms ease-out forwards;
+}
+
+/* CSSTransition keyframes */
+@keyframes li-items-slide-enter {
+  from {
+    transform: translateX(-100vw);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes li-items-slide-exit {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(100vw);
+  }
+}
+/* CSSTransition keyframes */

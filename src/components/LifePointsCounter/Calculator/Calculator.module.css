@@ -1,0 +1,187 @@
+/* mobile first */
+.ToastText {
+  font-size: 2vw;
+  font-weight: bold;
+  font-style: italic;
+  color: var(--secondary-1);
+  letter-spacing: 0.2vw;
+  width: 100%;
+}
+
+.ToastLogItems {
+  color: var(--secondary-2);
+  text-shadow: var(--text-shadow-secondary);
+  margin: 0.7vh 0.5vw;
+  display: inline-block;
+}
+
+.Container {
+  width: 100%;
+  height: 66%;
+  display: flex;
+  margin-bottom: 1%;
+  transition: all 200ms ease;
+}
+
+.Collapsed {
+  height: 20%;
+  width: 90%;
+  justify-content: center;
+  margin-bottom: 0;
+}
+
+.MidColumn {
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.MidColumn > button {
+  font-size: 3vw;
+  color: var(--secondary-1);
+}
+/* end mobile first */
+
+/* all mobiles portrait resolution */
+@media screen and (orientation: portrait) {
+  .ToastText {
+    font-size: 2vh;
+    letter-spacing: 0.2vw;
+  }
+
+  .ToastLogItems {
+    font-size: 1.8vh;
+    margin: 1vh 0.5vw;
+  }
+
+  .Container {
+    flex-direction: column;
+    height: 70%;
+    margin-bottom: unset;
+    margin-top: 2%;
+  }
+
+  .Collapsed {
+    height: 17%;
+  }
+
+  .MidColumn {
+    width: 100%;
+    flex-grow: 1;
+    height: 80%;
+    margin-top: 1.5vh;
+  }
+
+  .MidColumn > button {
+    font-size: 5.7vw;
+  }
+}
+/* end all mobiles portrait resolution */
+
+/* CSS Transition classes */
+:global(.log-type-in-out-enter) {
+  transform: translateX(-200vw);
+}
+
+:global(.log-type-in-out-enter-active) {
+  animation: logAnimation 500ms ease-in-out forwards;
+}
+
+:global(.log-type-in-out-exit-active) {
+  position: absolute;
+  top: 43%;
+  animation: logAnimation 500ms ease-in-out reverse;
+}
+
+:global(.log-type-in-out-exit) {
+  transform: translateX(-200vw);
+}
+
+:global(.toggle-calc-button-enter) {
+  transform: scale(0);
+  opacity: 0;
+}
+
+:global(.toggle-calc-button-enter-active) {
+  animation: toggleCalcButton 200ms linear forwards;
+}
+
+:global(.toggle-calc-button-exit) {
+  transform: scale(1);
+  opacity: 1;
+}
+
+:global(.toggle-calc-button-exit-active) {
+  animation: toggleCalcButton 200ms linear reverse;
+}
+
+:global(.toggle-calc-button-exit-done) {
+  transform: scale(0);
+  opacity: 0;
+}
+
+:global(.flicker-calc-sides-enter) {
+  transform: scale(0);
+  opacity: 0;
+}
+
+:global(.flicker-calc-sides-enter-active) {
+  animation: flickerCalcSides 360ms linear forwards;
+}
+
+:global(.flicker-calc-sides-exit) {
+  transform: scale(0);
+  opacity: 0;
+}
+
+:global(.flicker-calc-sides-exit-active) {
+  animation: flickerCalcSides 360ms linear forwards;
+}
+/* end CSS Transition classes */
+
+/* keyframes */
+@keyframes logAnimation {
+  0% {
+    transform: translateX(-200vw);
+  }
+  60% {
+    transform: translateX(0vw);
+    color: var(--primary-2);
+  }
+  80% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+    color: var(--secondary-2);
+  }
+}
+
+@keyframes toggleCalcButton {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes flickerCalcSides {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  60% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+/* end keyframes */

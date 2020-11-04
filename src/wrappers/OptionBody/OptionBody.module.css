@@ -1,0 +1,17 @@
+/* mobile first */
+.Container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 64vw;
+}
+/* end mobile first */
+
+/* all devices portrait */
+@media screen and (orientation: portrait) {
+  .Container {
+    width: 100%;
+    height: 100%;
+  }
+}
+/* end all devices portrait */

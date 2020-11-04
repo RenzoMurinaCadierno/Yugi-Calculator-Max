@@ -1,0 +1,173 @@
+/* mobile first */
+.Container,
+.TextContainer {
+  margin: auto;
+  margin-right: 0.5vw;
+  padding: 0;
+  height: 100%;
+  list-style: none;
+  font-size: 2vw;
+  letter-spacing: 0.1vw;
+  overflow-y: scroll;
+  color: var(--secondary-2);
+  font-weight: bold;
+  font-style: italic;
+  text-shadow: var(--overlay-text-shadow);
+}
+
+.TextContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.TextContainer button {
+  margin: 1vh 0;
+  font-size: 2.2vw;
+  height: 14vh;
+}
+
+.SuccessTitle,
+.ErrorTitle,
+.LoadingTextTitle {
+  font-size: 3vw;
+}
+
+.SuccessSubtitle,
+.ErrorSubtitle,
+.LoadingTextSubtitle {
+  color: var(--primary-3);
+  font-size: 2.3vw;
+}
+
+.SpinnerContainer {
+  width: 25%;
+  height: 25%;
+}
+
+.SuccessTitle {
+  font-size: 4vw;
+  padding: 0 2vw;
+}
+
+.SuccessSubtitle {
+  font-size: 2.3vw;
+  padding: 0 2vw;
+}
+
+.ErrorTitle {
+  font-size: 3.2vw;
+  padding: 0 2vw;
+}
+
+.ErrorSubtitle {
+  font-size: 2.2vw;
+  padding: 0.8vh 2vw;
+}
+/* end mobile first */
+
+/* all devices portrait */
+@media screen and (orientation: portrait) {
+  .TextContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+  }
+
+  .TextContainer button {
+    margin: 0.5vh 0;
+    font-size: 4vw;
+    height: 6vh;
+    width: 90%;
+  }
+
+  .SuccessTitle,
+  .ErrorTitle,
+  .LoadingTextTitle {
+    font-size: 5.5vw;
+    letter-spacing: 0.2vw;
+  }
+
+  .SuccessSubtitle,
+  .ErrorSubtitle,
+  .LoadingTextSubtitle {
+    font-size: 4vw;
+    letter-spacing: 0.2vw;
+  }
+
+  .SpinnerContainer {
+    width: 10%;
+    height: 10%;
+  }
+}
+/* end all devices portrait */
+
+/* Galaxy Fold and devices alike portrait tweaks */
+@media (max-width: 300px) and (max-height: 700px) {
+  .TextContainer button {
+    font-size: 4.5vw;
+  }
+
+  .SuccessTitle,
+  .ErrorTitle,
+  .LoadingTextTitle {
+    font-size: 6vw;
+  }
+
+  .SuccessSubtitle,
+  .ErrorSubtitle,
+  .LoadingTextSubtitle {
+    font-size: 5vw;
+  }
+
+  .SpinnerContainer {
+    width: 15%;
+    height: 15%;
+  }
+}
+/* end Galaxy Fold and devices alike portrait tweaks */
+
+/* Galaxy Fold and devices alike landscape tweaks */
+@media (max-width: 700px) and (max-height: 300px) {
+  .SuccessSubtitle,
+  .ErrorSubtitle,
+  .LoadingTextSubtitle {
+    font-size: 2vw;
+  }
+}
+/* end Galaxy Fold and devices alike landscape tweaks */
+
+/* iPad and iPadPro portrait tweaks */
+/* Surface Duo and devices alike portrait tweaks */
+@media (max-width: 600px) and (min-height: 700px) and (max-height: 725px),
+  (min-width: 760px) and (max-width: 1024px) and (orientation: portrait) {
+  .TextContainer button {
+    margin: 1vh 0;
+    font-size: 3vw;
+    height: 5.5vh;
+    width: 80%;
+  }
+
+  .SuccessTitle,
+  .ErrorTitle,
+  .LoadingTextTitle {
+    font-size: 4.5vw;
+  }
+
+  .SuccessSubtitle,
+  .ErrorSubtitle,
+  .LoadingTextSubtitle {
+    font-size: 3.5vw;
+  }
+
+  .SpinnerContainer {
+    width: 10%;
+    height: 10%;
+  }
+}
+/* end Surface Duo and devices alike portrait tweaks */
+/* end iPad and iPadPro portrait tweaks */

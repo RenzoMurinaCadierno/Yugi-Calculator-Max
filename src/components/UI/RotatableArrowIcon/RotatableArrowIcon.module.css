@@ -1,0 +1,76 @@
+/* mobile first */
+.Container {
+  max-width: 38px;
+  max-height: 38px;
+  padding: 0.1rem 0;
+  border: var(--border-primary);
+  box-shadow: var(--border-shadow-primary);
+  background: rgba(0, 0, 0, 0.8);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  filter: contrast(0.87);
+}
+
+.Container:hover,
+.Container:active {
+  filter: hue-rotate(310deg);
+}
+
+.ArrowImage {
+  width: 70%;
+  max-width: 26px;
+  filter: opacity(70%);
+  transition: all 0.5s ease;
+}
+
+.Left {
+  transform: rotate(0deg);
+}
+
+.UpLeft {
+  transform: rotate(45deg);
+}
+
+.Up {
+  transform: rotate(90deg);
+}
+
+.UpRight {
+  transform: rotate(135deg);
+}
+
+.Right {
+  transform: rotateY(-180deg);
+}
+
+.DownRight {
+  transform: rotateY(225deg);
+}
+
+.Down {
+  transform: rotate(270deg);
+}
+
+.DownLeft {
+  transform: rotateY(315deg);
+}
+
+.RightRotation {
+  transform: rotateY(0deg);
+}
+
+.LeftRotation {
+  transform: rotateY(-180deg);
+}
+
+.UpRotation {
+  transform: rotateY(90deg);
+}
+
+.DownRotation {
+  transform: rotateY(270deg);
+}
+/* end mobile first */

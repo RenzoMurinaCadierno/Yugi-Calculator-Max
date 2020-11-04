@@ -1,0 +1,33 @@
+/* mobile first */
+.Container {
+  width: 100%;
+  padding: 2vh 1vw;
+  border-radius: 0.7vw;
+}
+
+.Primary {
+  color: var(--primary-2);
+  border: var(--border-primary);
+  box-shadow: var(--border-shadow-primary);
+}
+
+.Secondary {
+  color: var(--secondary-2);
+  border: var(--border-secondary);
+  box-shadow: var(--border-shadow-secondary);
+}
+
+.Danger {
+  color: var(--danger-1);
+  border: var(--border-danger);
+  box-shadow: var(--border-shadow-danger);
+}
+/* end mobile first */
+
+/* all devices portrait */
+@media screen and (orientation: portrait) {
+  .Container {
+    padding: 0.5vh 1vw;
+  }
+}
+/* end all devices portrait */

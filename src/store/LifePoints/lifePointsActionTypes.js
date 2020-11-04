@@ -1,0 +1,6 @@
+export const INC = "INC"
+export const DEC = "DEC"
+export const RESTART = "RESTART"
+export const CONFIRM_RESTART = "CONFIRM_RESTART"
+export const MODIFY = "MODIFY"
+export const CLEAR = "CLEAR"

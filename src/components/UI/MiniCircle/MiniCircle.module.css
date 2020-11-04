@@ -1,0 +1,43 @@
+/* mobile first */
+.Container {
+  position: absolute;
+  top: 1vw;
+  right: 1vw;
+  width: 3.3vw;
+  height: 3.3vw;
+  color: var(--secondary-2);
+  font-size: 2.25vw;
+  font-weight: bold;
+  background-color: rgba(6, 6, 6, 0.8);
+  border-radius: 50%;
+  border: var(--border-secondary);
+  box-shadow: var(--border-shadow-secondary);
+  pointer-events: none;
+  transition: all 100ms ease;
+}
+
+.ContainerActive {
+  color: var(--highlight-0);
+}
+
+.Clickable {
+  cursor: pointer;
+  pointer-events: unset;
+}
+
+.Grow {
+  transform: scale(1.25);
+}
+/* end mobile first */
+
+/* all devices portrait */
+@media screen and (orientation: portrait) {
+  .Container {
+    top: 4vw;
+    right: 4vw;
+    width: 7vw;
+    height: 7vw;
+    font-size: 5vw;
+  }
+}
+/* end all devices portrait */
