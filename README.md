@@ -1,6 +1,6 @@
 # Yugi Calculator MAX
 
-An multi-purpose app to assist Yu-Gi-Oh! duelists, taken to the max!
+A multi-purpose app to assist Yu-Gi-Oh! duelists, taken to the max!
 
 Up and running **_[here](https://ycm.netlify.app/)._**
 
@@ -137,19 +137,19 @@ If you are a developer and want to help make this project grow, there are many t
 _Some ideas on what to do:_
 
 - **Testing on what we have up to now**, that's the number one priority. I created and uploaded the app, but did not program any tests yet. Since it is in "alpha" state and not widespread (one can dream), I want it to be used and crashed by users to realize what is prone to fail from the word "go". This was not a test-driven development, so we might was well re-invent components if needed, and write tests on them now.
-- **Code optimization**, in boatloads. There is too much to work to do in this topic alone. From code drying to nullify unnecesary re-renders. Speaking of re-renders, my biggest regret is not having embraced Redux when I had the chance, as I formerly thought the app would be just a calculator and that's it. But, one thing led to the other and here we are, sitting under an App.js wrapped around by 10 different Context Providers. If not migrating to Redux, optimizing re-renders caused by contexts would be a really nice idea.
+- **Code optimization**, in boatloads. There is too much to work to do on this topic alone. From code drying to nullify unnecesary re-renders. Speaking of re-renders, my biggest regret is not having embraced Redux when I had the chance, as I formerly thought the app would be just a calculator and that's it. But, one thing led to the other and here we are, sitting under an App.js wrapped around by 10 different Context Providers. If not migrating to Redux, optimizing re-renders caused by contexts would be a really nice idea.
 - A very, VERY big deal would be to **find an API where card images can be pulled from with no limits and re-build CardListItem components using those as display in UI instead of strings**. Actually, the reason for which Deck Builder works with card names instead of images is because I did not want to overload YGOPRODeck's image database with multiple requests. I will try asking them for permission. If granted, this would be a massive step to tackle as it would make UI/UX much more attractive.
 - Speaking of Deck Builder, a cool idea is to **make Card Items there draggable, and Card Filter list and Deck Sections, droppables**. This would create a good UX for users to drag-and-drop card items instead of clicking buttons.
 - The app was initially intended to work as a PWA, so **navigating using "back" and "forward" native browser's buttons is wonky**. Swiping and using the app's navigation arrows work as intended, though.
 - **Lots and lots of useEffect and useCallback warnings in console**, from dependencies that are not really needed. I suppose we could include them, but I honestly think the app might break, one way or another. Nevertheless, that's still something to correct, and of course, to test.
-- **There are some CSS files across the app -as well as generic UI components- that really make your eyes bleed**. Their code is more than spaghetti, as they were my first files and I did not have a clear path to write them uniformly. You will hopefully see a significant difference on how the code was typed from file to file. That's my learning curve.
+- **There are some CSS files across the app -as well as generic UI components- that really make your eyes bleed**. Their code is more than spaghetti, as they were my first files and I did not have a clear path to uniformly write them. You will hopefully see a significant difference on how the code was typed from file to file. That's my learning curve.
 - **Mediaqueries are very simple, and in some components, really specific**. Generalizing them to appeal to all screens is a pending topic.
 - Token components in "Calculator" only have their quantities and an image as a visual identifier. **It would be more functional if they also displayed editable ATK and/or DEF**. EditableInput UI component can be used for the task.
 - Customization can give the user the possibility to **change primary/secondary colors from "Configs" page**. Another state in UIContext can be added, which holds those colors to pass to all components whose CSS files include primary/secondary variables. Then override those className styles with JS-set inline styles.
 - **Some Toast's SFXs play when they are not supposed to** (e.g., when Toast is active and the component that renders it reloads, even though it was explicitly told not to play). This was an issue I did not investigate further since I consider it to be a minor bug. But that does not mean it cannot be tackled, of course.
 - And more. Who knows how much there is to add and improve.
 
-I am well aware of how messy the code is if you try to read and understand it by yourself. I did my best to comment the best I could, but if there is anything you need to know of this app's flow please do not hesitate reaching me out. We can even Discord to work dynamically.
+I am well aware of how messy the code is if you try to read and understand it by yourself. I did my best to comment what I could, but if there is anything you need to know of this app's flow please do not hesitate reaching me out. We can even Discord to work dynamically.
 
 ## What I learned from this project
 
