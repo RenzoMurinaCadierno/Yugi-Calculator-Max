@@ -85,9 +85,11 @@ export default function timerReducer(state = initialState, action) {
       // if they hold an invalid value, do nothing
       if (!validateInputOnChange(value, 2)) return state
       // "mins" and "secs" cannot go beyond 59, and "hours", beyond 23
-      if ((name === "mins" || name === "secs") && Number.parseInt(value) > 59)
+      if ((name === "mins" || name === "secs") && Number.parseInt(value) > 59) {
         value = 59
-      else if (Number.parseInt(value) > 23) value = 23
+      } else if (name === "hs" && Number.parseInt(value) > 23) {
+        value = 23
+      }
       // update the corresponding key in timerObject with its new value.
       return {
         ...state,
