@@ -2,7 +2,10 @@
 
 A multi-purpose app to assist Yu-Gi-Oh! duelists, taken to the max!
 
-Up and running **_[here](https://ycm.netlify.app/)._**
+- Up and running **_[here](https://ycm.netlify.app/)._**
+
+  - [Guide in english](https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DUVCinDalYwM%26list%3DPLJTpEATV0FvSJxulsI9mT-qwkAD_AVS6C%26fbclid%3DIwAR1WKxuc_ygY2AF5BnWVKjUSeiUPzA-g9djGux3QyoIT_TnkIUbIZRQzCcA&h=AT1vEnV8uGkiJC0msbCG7fAcdb1EvF9dcSGu7KbwrYrwcNLx1Ag-oa8s189HPSGxu8wY_s5DPTWDe8eEOsu3q9yD4bLkhq7y9ZrC1I8G8ITZoELL6DR1qU3Su0XRXtmuJWi9&__tn__=-UK-R&c[0]=AT1JDXF3NqmHAvSuYLaAwtlaPNFeSHZyHHQrdrolP06GZqx1q_-HDvjo8nwHIeS7GwrC8q1i6sJoEKrywpniMBZXJYEOtkzV64jTnTVGXYWLISWu5049qwecs-Hn9s91AlHum4pN1FegkQZXYCGdU3CXyFyVbxSc6RLe_ZU)
+  - [Tutorial en español](https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DFvzzoiYFFmc%26list%3DPLJTpEATV0FvQN4WdPzkj8c4tPbQoWqVZy%26fbclid%3DIwAR1afrv35-h73khTuaxcVrPWHimkEMvTsBdUHifu1ilTjGc50ZrBTg74Mkc&h=AT2o9DoiFUEERGB0PbxJ0Vq9-Rz9qAfjVkihAAARREXp04POLqx7EVCEupDUgY4SyDHzVELqoGyUy-wFUgnLQYBnwk91MzFxLHKNOp0sqfthDBribZL5ncqEFe5vvIBVBC7o&__tn__=-UK-R&c[0]=AT1JDXF3NqmHAvSuYLaAwtlaPNFeSHZyHHQrdrolP06GZqx1q_-HDvjo8nwHIeS7GwrC8q1i6sJoEKrywpniMBZXJYEOtkzV64jTnTVGXYWLISWu5049qwecs-Hn9s91AlHum4pN1FegkQZXYCGdU3CXyFyVbxSc6RLe_ZU)
 
 ## Overview
 
